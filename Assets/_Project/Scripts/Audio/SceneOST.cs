@@ -5,6 +5,8 @@ namespace LudumDare57.Audio
 {
     public class SceneOST : MonoBehaviour
     {
+        public SoundEvent.Instance Instance => _instance;
+        
         [SerializeField] private SoundEvent _event;
 
         private SoundEvent.Instance _instance;

@@ -1,11 +1,45 @@
-﻿using UnityEditor;
+﻿using TSS.Utils.Editor;
+using UnityEditor;
 using UnityEngine;
 
 namespace TSS.Tweening.Editor
 {
     [CustomEditor(typeof(ScriptableTween))]
+    [CanEditMultipleObjects]
     public class ScriptableTweenEditor : UnityEditor.Editor
     {
+        [MenuItem("CONTEXT/CanvasRenderer/Set Tint A0")]
+        public static void SetTintAlpha0(MenuCommand cmd)
+        {
+            ((CanvasRenderer)cmd.context).SetAlpha(0);
+            EditorUtility.SetDirty(cmd.context);
+        }
+        
+        [MenuItem("CONTEXT/ScriptableTween/Export SO")]
+        public static void ExportSO(MenuCommand cmd)
+        {
+            var saveTo = EditorUtility.SaveFilePanel("Save SO", "Assets/_Project/Content/UI", "STP_", "asset");
+            if (string.IsNullOrEmpty(saveTo))
+                return;
+
+            var ctx = cmd.context as ScriptableTween;
+            var serializedCtx = new SerializedObject(ctx);
+            var ctxItemsProp = serializedCtx.FindProperty("_items");
+            
+            var instance = CreateInstance<ScriptableTweenPreset>();
+            var serialized = new SerializedObject(instance);
+            var itemsProp = serialized.FindProperty("_items");
+            itemsProp.arraySize = ctxItemsProp.arraySize;
+            for (int i = 0; i < itemsProp.arraySize; i++)
+                itemsProp.GetArrayElementAtIndex(i).managedReferenceValue = ctxItemsProp.GetArrayElementAtIndex(i).managedReferenceValue;
+            serialized.ApplyModifiedProperties();
+            serialized.Update();
+            
+            AssetDatabase.CreateAsset(instance, "Assets" + saveTo.Split("Assets")[1]);
+            AssetDatabase.Refresh();
+            EditorGUIUtility.PingObject(instance);
+        }
+        
         public override void OnInspectorGUI()
         {
             ScriptableTweenItemPropertyDrawer.TargetProvider = serializedObject;

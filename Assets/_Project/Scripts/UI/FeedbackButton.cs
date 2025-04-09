@@ -1,3 +1,4 @@
+using System;
 using Cysharp.Threading.Tasks;
 using JetBrains.Annotations;
 using R3;
@@ -20,6 +21,8 @@ namespace LudumDare57.UI
             get => _interactable;
             set
             {
+                if (_interactable == value)
+                    return;
                 _interactable = value;
                 if (_hover)
                 {
@@ -35,6 +38,7 @@ namespace LudumDare57.UI
             }
         }
         
+        [SerializeField] private bool _interactable = true;
         [SerializeField] private ScriptableTween _toDefaultTween;
         [SerializeField] private ScriptableTween _toHoverTween;
         [SerializeField] private ScriptableTween _toDownTween;
@@ -42,7 +46,6 @@ namespace LudumDare57.UI
         [SerializeField] private ScriptableTween _feedbackTween;
         [SerializeField] private bool _lockInputOnFeedback;
 
-        private bool _interactable = true;
         private bool _down;
         private bool _hover;
         private readonly Subject<Unit> _onDown = new();
@@ -54,6 +57,20 @@ namespace LudumDare57.UI
 
         public Observable<Unit> ObserveFeedbackStart() => _onBeforeFeedback;
         public Observable<Unit> ObserveFeedbackEnd() => _onAfterFeedback;
+
+        private void Awake()
+        {
+            if (_interactable)
+            {
+                _toDefaultTween.Play();
+                _toDefaultTween.Complete(true);
+            }
+            else
+            {
+                _toDisabledTween.Play();
+                _toDisabledTween.Complete(true);
+            }
+        }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
@@ -120,14 +137,16 @@ namespace LudumDare57.UI
             if (_feedbackTween && _feedbackTween.IsPlaying)
                 return;
             KillTransitionTweens();
+            var tween = _toDefaultTween;
             if (!_interactable)
-                _toDisabledTween.Play();
+                tween = _toDisabledTween;
             else if (_down)
-                _toDownTween.Play();
+                tween = _toDownTween;
             else if (_hover)
-                _toHoverTween.Play();
-            else
-                _toDefaultTween.Play();
+                tween = _toHoverTween;
+            tween.Play();
+            if (!gameObject.activeInHierarchy)
+                tween.Complete(true);
         }
 
         private void KillTransitionTweens()

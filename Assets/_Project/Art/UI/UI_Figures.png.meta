@@ -108,12 +108,12 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -176,13 +176,13 @@ TextureImporter:
       name: UI_Figures_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 3667
-        width: 536
-        height: 537
+        x: 0
+        y: 1792
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 268, y: 269, z: 268, w: 268}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -198,13 +198,13 @@ TextureImporter:
       name: UI_Figures_1
       rect:
         serializedVersion: 2
-        x: 631
-        y: 3667
-        width: 536
-        height: 537
+        x: 256
+        y: 1792
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 268, y: 269, z: 268, w: 268}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -220,13 +220,13 @@ TextureImporter:
       name: UI_Figures_2
       rect:
         serializedVersion: 2
-        x: 1265
-        y: 3679
-        width: 537
-        height: 536
+        x: 512
+        y: 1792
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 269, y: 268, z: 268, w: 268}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -242,13 +242,13 @@ TextureImporter:
       name: UI_Figures_3
       rect:
         serializedVersion: 2
-        x: 1886
-        y: 3671
-        width: 536
-        height: 536
+        x: 768
+        y: 1792
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -264,13 +264,13 @@ TextureImporter:
       name: UI_Figures_4
       rect:
         serializedVersion: 2
-        x: 2461
-        y: 3671
-        width: 536
-        height: 536
+        x: 1024
+        y: 1792
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 64, y: 64, z: 64, w: 64}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -286,13 +286,13 @@ TextureImporter:
       name: UI_Figures_5
       rect:
         serializedVersion: 2
-        x: 3083
-        y: 3660
-        width: 536
-        height: 537
+        x: 1280
+        y: 1792
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 64, y: 64, z: 64, w: 64}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -308,13 +308,13 @@ TextureImporter:
       name: UI_Figures_6
       rect:
         serializedVersion: 2
-        x: 67
-        y: 3043
-        width: 536
-        height: 536
+        x: 1536
+        y: 1792
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 64, y: 64, z: 64, w: 64}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -330,13 +330,13 @@ TextureImporter:
       name: UI_Figures_7
       rect:
         serializedVersion: 2
-        x: 670
-        y: 3054
-        width: 537
-        height: 536
+        x: 1792
+        y: 1792
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 64, y: 64, z: 64, w: 64}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -352,13 +352,13 @@ TextureImporter:
       name: UI_Figures_8
       rect:
         serializedVersion: 2
-        x: 1295
-        y: 3054
-        width: 537
-        height: 536
+        x: 0
+        y: 1536
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 64, y: 64, z: 64, w: 64}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -374,13 +374,13 @@ TextureImporter:
       name: UI_Figures_9
       rect:
         serializedVersion: 2
-        x: 1955
-        y: 3058
-        width: 536
-        height: 536
+        x: 256
+        y: 1536
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 192, y: 192, z: 192, w: 192}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -396,13 +396,13 @@ TextureImporter:
       name: UI_Figures_10
       rect:
         serializedVersion: 2
-        x: 2533
-        y: 3054
-        width: 537
-        height: 536
+        x: 512
+        y: 1536
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 192, y: 192, z: 192, w: 192}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -418,13 +418,13 @@ TextureImporter:
       name: UI_Figures_11
       rect:
         serializedVersion: 2
-        x: 3156
-        y: 3046
-        width: 536
-        height: 536
+        x: 768
+        y: 1536
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 192, y: 192, z: 192, w: 192}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -440,13 +440,13 @@ TextureImporter:
       name: UI_Figures_12
       rect:
         serializedVersion: 2
-        x: 74
-        y: 2405
-        width: 536
-        height: 536
+        x: 1024
+        y: 1536
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 96, y: 96, z: 96, w: 96}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -462,13 +462,13 @@ TextureImporter:
       name: UI_Figures_13
       rect:
         serializedVersion: 2
-        x: 671
-        y: 2413
-        width: 536
-        height: 536
+        x: 1280
+        y: 1536
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 96, y: 96, z: 96, w: 96}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -484,13 +484,13 @@ TextureImporter:
       name: UI_Figures_14
       rect:
         serializedVersion: 2
-        x: 1304
-        y: 2424
-        width: 537
-        height: 537
+        x: 1536
+        y: 1536
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 96, y: 96, z: 96, w: 96}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -506,13 +506,13 @@ TextureImporter:
       name: UI_Figures_15
       rect:
         serializedVersion: 2
-        x: 1974
-        y: 2443
-        width: 536
-        height: 536
+        x: 1792
+        y: 1536
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 96, y: 96, z: 96, w: 96}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -528,13 +528,13 @@ TextureImporter:
       name: UI_Figures_16
       rect:
         serializedVersion: 2
-        x: 2582
-        y: 2443
-        width: 537
-        height: 537
+        x: 0
+        y: 1280
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 96, y: 96, z: 96, w: 96}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -550,13 +550,13 @@ TextureImporter:
       name: UI_Figures_17
       rect:
         serializedVersion: 2
-        x: 3205
-        y: 2436
-        width: 536
-        height: 536
+        x: 256
+        y: 1280
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 96, y: 96, z: 96, w: 96}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -572,13 +572,13 @@ TextureImporter:
       name: UI_Figures_18
       rect:
         serializedVersion: 2
-        x: 70
-        y: 1792
-        width: 536
-        height: 536
+        x: 512
+        y: 1280
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 96, y: 96, z: 96, w: 96}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -594,13 +594,13 @@ TextureImporter:
       name: UI_Figures_19
       rect:
         serializedVersion: 2
-        x: 683
-        y: 1791
-        width: 537
-        height: 536
+        x: 768
+        y: 1280
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 96, y: 96, z: 96, w: 96}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -616,13 +616,13 @@ TextureImporter:
       name: UI_Figures_20
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 1803
-        width: 536
-        height: 536
+        x: 1024
+        y: 1280
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 96, y: 96, z: 96, w: 96}
+      border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
       physicsShape: []
@@ -630,6 +630,600 @@ TextureImporter:
       bones: []
       spriteID: 8b75216cc4171a990800000000000000
       internalID: -7376490140101617736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee8a7ac316e7e0408ca47f2230207fe
+      internalID: 1085697922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33ab3fd11b331e4e82aebc31af05bba
+      internalID: 2067095439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_23
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5460569c38faf424f86bbf500e948664
+      internalID: -1229065103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3327493bf472449b73cbd30beb3b7c
+      internalID: -19862782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4fe5e518f9fce4a95fb2b66c8aeb29
+      internalID: 2040858446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38acbeece37d134c96416710549e1ba
+      internalID: 104995923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_27
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a823c464b71464abf3ef98143d5021
+      internalID: -50939611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b98dfb395212154abc8912f4ffe3a20
+      internalID: -599748161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_29
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5fa8e6399fb1741958bad5d68d3abd
+      internalID: -743844005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_30
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77f76fd3c30a5449945b828882dba45
+      internalID: -929131376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_31
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be000475ff0e594696e0b245dc74e1e
+      internalID: 1219505189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2b98832a894bf4eb992f45c2fb2e9c
+      internalID: -2081231737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e923e30f3a6b73047acc1c2bf9a79211
+      internalID: -1188430319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1488bdae3123f2842b463a41a687e15e
+      internalID: -402131954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_35
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dea655f417c9349916dfe53bb70f46
+      internalID: 874413649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_36
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985f8a5f33e086a4c9e5c6c4d6127f36
+      internalID: -1630757497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_37
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1a65cecf7c94548ae346f997bfcb00
+      internalID: 1562353159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_38
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363fa530e33942147aef227591e0bf3d
+      internalID: 1215892291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_39
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6169f3a0654c5c44e8b0a52d88d6f783
+      internalID: 1222487910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e1e968f068c1442b04a3d02e582bb6
+      internalID: -285610554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_41
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef18b7c626a8cb4db0d4faa36f83ffb
+      internalID: -955187892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_42
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daab82c35ce7e5b4c8b207f2b839307b
+      internalID: 112507611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_43
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dec3920bc8d2d3409fbbef9faab103c
+      internalID: -333410215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_44
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313061b723e105f458da937efbe4ba69
+      internalID: -888204789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_45
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c3f7f6dc42c7d45b54f76e07df8f18
+      internalID: 1366203768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_46
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813ecf0bb548db9409d287927b25019a
+      internalID: 1358228764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Figures_47
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 128, y: 128, z: 128, w: 128}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f28e4b9b28a9240aa754b03b522131
+      internalID: -483938365
       vertices: []
       indices: 
       edges: []
@@ -662,9 +1256,44 @@ TextureImporter:
       UI_Figures_19: 101158752294583809
       UI_Figures_2: 8526099023851378763
       UI_Figures_20: -7376490140101617736
+      UI_Figures_21: 1085697922
+      UI_Figures_22: 2067095439
+      UI_Figures_23: -1229065103
+      UI_Figures_24: -19862782
+      UI_Figures_25: 2040858446
+      UI_Figures_26: 104995923
+      UI_Figures_27: -50939611
+      UI_Figures_28: -599748161
+      UI_Figures_29: -743844005
       UI_Figures_3: 3077543833483543365
+      UI_Figures_30: -929131376
+      UI_Figures_31: 1219505189
+      UI_Figures_32: -2081231737
+      UI_Figures_33: -1188430319
+      UI_Figures_34: -402131954
+      UI_Figures_35: 874413649
+      UI_Figures_36: -1630757497
+      UI_Figures_37: 1562353159
+      UI_Figures_38: 1215892291
+      UI_Figures_39: 1222487910
       UI_Figures_4: 4335388862248084727
+      UI_Figures_40: -285610554
+      UI_Figures_41: -955187892
+      UI_Figures_42: 112507611
+      UI_Figures_43: -333410215
+      UI_Figures_44: -888204789
+      UI_Figures_45: 1366203768
+      UI_Figures_46: 1358228764
+      UI_Figures_47: -483938365
+      UI_Figures_48: -1809872712
+      UI_Figures_49: -1076333606
       UI_Figures_5: -5867277107500554973
+      UI_Figures_50: 264677234
+      UI_Figures_51: -1918078168
+      UI_Figures_52: -274929871
+      UI_Figures_53: -795118573
+      UI_Figures_54: -646488789
+      UI_Figures_55: 835984648
       UI_Figures_6: 1827652983711238677
       UI_Figures_7: 7166997027533273625
       UI_Figures_8: 7427970318744191446
