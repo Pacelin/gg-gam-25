@@ -36,8 +36,8 @@ namespace LudumDare57.UI
         private void OnEnable()
         {
             _disposable = Disposable.Combine(
-                _resumeButton.ObserveClick().Subscribe(_ => Close()),
-                _menuButton.ObserveClick().Subscribe(_ => SceneManager.Scene(CMS.Scenes.MainMenu)
+                _resumeButton.ObserveFeedbackEnd().Subscribe(_ => Close()),
+                _menuButton.ObserveFeedbackEnd().Subscribe(_ => SceneManager.Scene(CMS.Scenes.MainMenu)
                     .Single().Load(Runtime.CancellationToken).Forget()));
         }
 

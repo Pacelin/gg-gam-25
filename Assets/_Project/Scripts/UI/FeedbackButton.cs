@@ -3,7 +3,6 @@ using JetBrains.Annotations;
 using R3;
 using TSS.Tweening;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -14,35 +13,63 @@ namespace LudumDare57.UI
     public class FeedbackButton : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IPointerExitHandler, IPointerClickHandler
     {
         public bool Hold => _down;
+        public bool Hover => _hover;
+
+        public bool Interactable
+        {
+            get => _interactable;
+            set
+            {
+                _interactable = value;
+                if (_hover)
+                {
+                    _onExit.OnNext(Unit.Default);
+                    _hover = false;
+                }
+                if (_down)
+                {
+                    _onUp.OnNext(Unit.Default);
+                    _down = false;
+                }
+                UpdateState();
+            }
+        }
         
         [SerializeField] private ScriptableTween _toDefaultTween;
         [SerializeField] private ScriptableTween _toHoverTween;
         [SerializeField] private ScriptableTween _toDownTween;
+        [SerializeField] private ScriptableTween _toDisabledTween;
         [SerializeField] private ScriptableTween _feedbackTween;
         [SerializeField] private bool _lockInputOnFeedback;
-        [SerializeField] private UnityEvent _onBecomeHover;
-        [SerializeField] private UnityEvent _onClick;
 
+        private bool _interactable = true;
         private bool _down;
         private bool _hover;
         private readonly Subject<Unit> _onDown = new();
         private readonly Subject<Unit> _onUp = new();
-        private readonly Subject<Unit> _clickSubject = new();
-        private readonly Subject<Unit> _beforeFeedbackSubject = new();
+        private readonly Subject<Unit> _onEnter = new();
+        private readonly Subject<Unit> _onExit = new();
+        private readonly Subject<Unit> _onAfterFeedback = new();
+        private readonly Subject<Unit> _onBeforeFeedback = new();
 
-        public Observable<Unit> ObserveClick() => _clickSubject;
-        public Observable<Unit> ObserveFeedbackStart() => _beforeFeedbackSubject;
+        public Observable<Unit> ObserveFeedbackStart() => _onBeforeFeedback;
+        public Observable<Unit> ObserveFeedbackEnd() => _onAfterFeedback;
 
         public void OnPointerEnter(PointerEventData eventData)
         {
+            if (!_interactable)
+                return;
             _hover = true;
-            _onBecomeHover?.Invoke();
+            _onEnter.OnNext(Unit.Default);
             UpdateState();
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
+            if (!_interactable)
+                return;
             _hover = false;
+            _onExit.OnNext(Unit.Default);
             if (_down)
                 _onUp.OnNext(Unit.Default);
             _down = false;
@@ -51,6 +78,8 @@ namespace LudumDare57.UI
 
         public void OnPointerDown(PointerEventData eventData)
         {
+            if (!_interactable)
+                return;
             _down = true;
             _onDown.OnNext(Unit.Default);
             UpdateState();
@@ -58,12 +87,13 @@ namespace LudumDare57.UI
 
         public void OnPointerClick(PointerEventData eventData)
         {
+            if (!_interactable)
+                return;
             if (!_down)
                 return;
             _down = false;
             _onUp.OnNext(Unit.Default);
-            _beforeFeedbackSubject.OnNext(Unit.Default);
-            _onClick?.Invoke();
+            _onBeforeFeedback.OnNext(Unit.Default);
             if (_feedbackTween)
             {
                 KillTransitionTweens();
@@ -75,13 +105,13 @@ namespace LudumDare57.UI
                     if (_lockInputOnFeedback)
                         OverlayInputLock.Disable();
                     UpdateState();
-                    _clickSubject.OnNext(Unit.Default);
+                    _onAfterFeedback.OnNext(Unit.Default);
                 });
             }
             else
             {
                 UpdateState();
-                _clickSubject.OnNext(Unit.Default);
+                _onAfterFeedback.OnNext(Unit.Default);
             }
         }
 
@@ -90,7 +120,9 @@ namespace LudumDare57.UI
             if (_feedbackTween && _feedbackTween.IsPlaying)
                 return;
             KillTransitionTweens();
-            if (_down)
+            if (!_interactable)
+                _toDisabledTween.Play();
+            else if (_down)
                 _toDownTween.Play();
             else if (_hover)
                 _toHoverTween.Play();
@@ -100,6 +132,8 @@ namespace LudumDare57.UI
 
         private void KillTransitionTweens()
         {
+            if (_toDisabledTween.IsPlaying)
+                _toDisabledTween.Pause();
             if (_toDefaultTween.IsPlaying)
                 _toDefaultTween.Pause();
             if (_toDownTween.IsPlaying)

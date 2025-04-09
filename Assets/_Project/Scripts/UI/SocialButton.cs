@@ -20,7 +20,7 @@ namespace LudumDare57.UI
 
         private void OnEnable()
         {
-            _disposable = _feedbackButton.ObserveClick()
+            _disposable = _feedbackButton.ObserveFeedbackEnd()
                 .Subscribe(_ => Application.OpenURL(_url));
         }
 

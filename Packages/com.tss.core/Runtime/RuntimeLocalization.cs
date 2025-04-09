@@ -11,8 +11,8 @@ namespace TSS.Core
     {
         public async UniTask Initialize(CancellationToken cancellationToken)
         {
-            await LocalizationSettings.InitializationOperation
-                .ToUniTask(cancellationToken: cancellationToken);
+            //await LocalizationSettings.InitializationOperation
+                //.ToUniTask(cancellationToken: cancellationToken);
         }
         public void Dispose() { }
     }
