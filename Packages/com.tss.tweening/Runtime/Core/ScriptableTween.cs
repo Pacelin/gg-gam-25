@@ -73,6 +73,15 @@ namespace TSS.Tweening
             _sequence.Pause();
         }
 
+        public void Kill(bool complete = false)
+        {
+            if (_sequence != null)
+            {
+                _sequence.Kill(complete);
+                _sequence = null;
+            }
+        }
+
         private void BuildSequence()
         {
             _sequence = DOTween.Sequence(this);

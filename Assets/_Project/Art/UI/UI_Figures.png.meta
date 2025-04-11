@@ -176,12 +176,12 @@ TextureImporter:
       name: UI_Figures_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1792
-        width: 256
-        height: 256
+        x: 27
+        y: 1769
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -198,12 +198,12 @@ TextureImporter:
       name: UI_Figures_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1792
-        width: 256
-        height: 256
+        x: 315
+        y: 1769
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -220,12 +220,12 @@ TextureImporter:
       name: UI_Figures_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1792
-        width: 256
-        height: 256
+        x: 603
+        y: 1769
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -242,12 +242,12 @@ TextureImporter:
       name: UI_Figures_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1792
-        width: 256
-        height: 256
+        x: 891
+        y: 1769
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -264,12 +264,12 @@ TextureImporter:
       name: UI_Figures_4
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1792
-        width: 256
-        height: 256
+        x: 1179
+        y: 1769
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -286,12 +286,12 @@ TextureImporter:
       name: UI_Figures_5
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 1792
-        width: 256
-        height: 256
+        x: 1467
+        y: 1769
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -308,12 +308,12 @@ TextureImporter:
       name: UI_Figures_6
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1792
-        width: 256
-        height: 256
+        x: 1755
+        y: 1769
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -330,12 +330,12 @@ TextureImporter:
       name: UI_Figures_7
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 1792
-        width: 256
-        height: 256
+        x: 27
+        y: 1481
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -352,12 +352,12 @@ TextureImporter:
       name: UI_Figures_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 256
-        height: 256
+        x: 315
+        y: 1481
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -374,12 +374,12 @@ TextureImporter:
       name: UI_Figures_9
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1536
-        width: 256
-        height: 256
+        x: 603
+        y: 1481
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -396,12 +396,12 @@ TextureImporter:
       name: UI_Figures_10
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 256
-        height: 256
+        x: 891
+        y: 1481
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -418,12 +418,12 @@ TextureImporter:
       name: UI_Figures_11
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1536
-        width: 256
-        height: 256
+        x: 1179
+        y: 1481
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -440,12 +440,12 @@ TextureImporter:
       name: UI_Figures_12
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1536
-        width: 256
-        height: 256
+        x: 1467
+        y: 1481
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -462,12 +462,12 @@ TextureImporter:
       name: UI_Figures_13
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 1536
-        width: 256
-        height: 256
+        x: 1755
+        y: 1481
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -484,12 +484,12 @@ TextureImporter:
       name: UI_Figures_14
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 256
-        height: 256
+        x: 27
+        y: 1193
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -506,12 +506,12 @@ TextureImporter:
       name: UI_Figures_15
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 1536
-        width: 256
-        height: 256
+        x: 315
+        y: 1193
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -528,12 +528,12 @@ TextureImporter:
       name: UI_Figures_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1280
-        width: 256
-        height: 256
+        x: 603
+        y: 1193
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -550,12 +550,12 @@ TextureImporter:
       name: UI_Figures_17
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1280
-        width: 256
-        height: 256
+        x: 891
+        y: 1193
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -572,12 +572,12 @@ TextureImporter:
       name: UI_Figures_18
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1280
-        width: 256
-        height: 256
+        x: 1179
+        y: 1193
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -594,12 +594,12 @@ TextureImporter:
       name: UI_Figures_19
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1280
-        width: 256
-        height: 256
+        x: 1467
+        y: 1193
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -616,12 +616,12 @@ TextureImporter:
       name: UI_Figures_20
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1280
-        width: 256
-        height: 256
+        x: 1755
+        y: 1193
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -638,12 +638,12 @@ TextureImporter:
       name: UI_Figures_21
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 1280
-        width: 256
-        height: 256
+        x: 27
+        y: 905
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -660,12 +660,12 @@ TextureImporter:
       name: UI_Figures_22
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1280
-        width: 256
-        height: 256
+        x: 315
+        y: 905
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -682,12 +682,12 @@ TextureImporter:
       name: UI_Figures_23
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 1280
-        width: 256
-        height: 256
+        x: 603
+        y: 905
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -704,12 +704,12 @@ TextureImporter:
       name: UI_Figures_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 256
-        height: 256
+        x: 891
+        y: 905
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -726,12 +726,12 @@ TextureImporter:
       name: UI_Figures_25
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1024
-        width: 256
-        height: 256
+        x: 1179
+        y: 905
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -748,12 +748,12 @@ TextureImporter:
       name: UI_Figures_26
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 256
-        height: 256
+        x: 1467
+        y: 905
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -770,12 +770,12 @@ TextureImporter:
       name: UI_Figures_27
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1024
-        width: 256
-        height: 256
+        x: 1755
+        y: 905
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -792,12 +792,12 @@ TextureImporter:
       name: UI_Figures_28
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 256
-        height: 256
+        x: 27
+        y: 617
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -814,12 +814,12 @@ TextureImporter:
       name: UI_Figures_29
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 1024
-        width: 256
-        height: 256
+        x: 315
+        y: 617
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -836,12 +836,12 @@ TextureImporter:
       name: UI_Figures_30
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1024
-        width: 256
-        height: 256
+        x: 603
+        y: 617
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -858,12 +858,12 @@ TextureImporter:
       name: UI_Figures_31
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 1024
-        width: 256
-        height: 256
+        x: 891
+        y: 617
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -880,12 +880,12 @@ TextureImporter:
       name: UI_Figures_32
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 256
-        height: 256
+        x: 1179
+        y: 617
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -902,12 +902,12 @@ TextureImporter:
       name: UI_Figures_33
       rect:
         serializedVersion: 2
-        x: 256
-        y: 768
-        width: 256
-        height: 256
+        x: 1467
+        y: 617
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -924,12 +924,12 @@ TextureImporter:
       name: UI_Figures_34
       rect:
         serializedVersion: 2
-        x: 512
-        y: 768
-        width: 256
-        height: 256
+        x: 1755
+        y: 617
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -946,12 +946,12 @@ TextureImporter:
       name: UI_Figures_35
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 256
-        height: 256
+        x: 27
+        y: 329
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -968,12 +968,12 @@ TextureImporter:
       name: UI_Figures_36
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 768
-        width: 256
-        height: 256
+        x: 315
+        y: 329
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -990,12 +990,12 @@ TextureImporter:
       name: UI_Figures_37
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 768
-        width: 256
-        height: 256
+        x: 603
+        y: 329
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -1012,12 +1012,12 @@ TextureImporter:
       name: UI_Figures_38
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 768
-        width: 256
-        height: 256
+        x: 891
+        y: 329
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -1034,12 +1034,12 @@ TextureImporter:
       name: UI_Figures_39
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 768
-        width: 256
-        height: 256
+        x: 1179
+        y: 329
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -1056,12 +1056,12 @@ TextureImporter:
       name: UI_Figures_40
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 256
+        x: 1467
+        y: 329
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -1078,12 +1078,12 @@ TextureImporter:
       name: UI_Figures_41
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 256
+        x: 1755
+        y: 329
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -1100,12 +1100,12 @@ TextureImporter:
       name: UI_Figures_42
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 256
+        x: 27
+        y: 41
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -1122,12 +1122,12 @@ TextureImporter:
       name: UI_Figures_43
       rect:
         serializedVersion: 2
-        x: 768
-        y: 512
-        width: 256
-        height: 256
+        x: 315
+        y: 41
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -1144,12 +1144,12 @@ TextureImporter:
       name: UI_Figures_44
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 512
-        width: 256
-        height: 256
+        x: 603
+        y: 41
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -1166,12 +1166,12 @@ TextureImporter:
       name: UI_Figures_45
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 512
-        width: 256
-        height: 256
+        x: 891
+        y: 41
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -1188,12 +1188,12 @@ TextureImporter:
       name: UI_Figures_46
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 512
-        width: 256
-        height: 256
+        x: 1179
+        y: 41
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -1210,12 +1210,12 @@ TextureImporter:
       name: UI_Figures_47
       rect:
         serializedVersion: 2
-        x: 1792
-        y: 512
-        width: 256
-        height: 256
+        x: 1467
+        y: 41
+        width: 257
+        height: 257
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 128, y: 128, z: 128, w: 128}
       customData: 
       outline: []
@@ -1285,15 +1285,7 @@ TextureImporter:
       UI_Figures_45: 1366203768
       UI_Figures_46: 1358228764
       UI_Figures_47: -483938365
-      UI_Figures_48: -1809872712
-      UI_Figures_49: -1076333606
       UI_Figures_5: -5867277107500554973
-      UI_Figures_50: 264677234
-      UI_Figures_51: -1918078168
-      UI_Figures_52: -274929871
-      UI_Figures_53: -795118573
-      UI_Figures_54: -646488789
-      UI_Figures_55: 835984648
       UI_Figures_6: 1827652983711238677
       UI_Figures_7: 7166997027533273625
       UI_Figures_8: 7427970318744191446

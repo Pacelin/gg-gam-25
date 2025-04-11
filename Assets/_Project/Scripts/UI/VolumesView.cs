@@ -1,4 +1,6 @@
-﻿using TSS.Audio;
+﻿using System;
+using R3;
+using TSS.Audio;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,29 +8,28 @@ namespace LudumDare57.UI
 {
     public class VolumesView : MonoBehaviour
     {
-        [SerializeField] private Slider _master;
-        [SerializeField] private Slider _music;
-        [SerializeField] private Slider _sfx;
+        [SerializeField] private ScriptableSlider _master;
+        [SerializeField] private ScriptableSlider _music;
+        [SerializeField] private ScriptableSlider _sfx;
 
+        private IDisposable _disposable;
+        
         private void OnEnable()
         {
-            _master.SetValueWithoutNotify(AudioSystem.Volumes.MasterVolume);
-            _music.SetValueWithoutNotify(AudioSystem.Volumes.GetVolume(0));
-            _sfx.SetValueWithoutNotify(AudioSystem.Volumes.GetVolume(1));
-            _master.onValueChanged.AddListener(OnMasterChanged);
-            _music.onValueChanged.AddListener(OnMusicChanged);
-            _sfx.onValueChanged.AddListener(OnSFXChanged);
+            _master.Value = (AudioSystem.Volumes.MasterVolume);
+            _music.Value = (AudioSystem.Volumes.GetVolume(0));
+            _sfx.Value = (AudioSystem.Volumes.GetVolume(1));
+            _disposable = new CompositeDisposable()
+            {
+                _master.OnValueChanged.Subscribe(v => AudioSystem.Volumes.MasterVolume = v),
+                _music.OnValueChanged.Subscribe(v => AudioSystem.Volumes.SetVolume(0, v)),
+                _sfx.OnValueChanged.Subscribe(v => AudioSystem.Volumes.SetVolume(0, v))
+            };
         }
 
         private void OnDisable()
         {
-            _master.onValueChanged.RemoveListener(OnMasterChanged);
-            _music.onValueChanged.RemoveListener(OnMusicChanged);
-            _sfx.onValueChanged.RemoveListener(OnSFXChanged);
+            _disposable?.Dispose();
         }
-
-        private void OnMasterChanged(float value) => AudioSystem.Volumes.MasterVolume = value;
-        private void OnMusicChanged(float value) => AudioSystem.Volumes.SetVolume(0, value);
-        private void OnSFXChanged(float value) => AudioSystem.Volumes.SetVolume(1, value);
     }
 }

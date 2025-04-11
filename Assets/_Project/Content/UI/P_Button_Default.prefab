@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e92e123e435f9734898d565567d04174, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: LudumDare57.UI.FeedbackButton, Assembly-CSharp
+  m_EditorClassIdentifier: LudumDare57.UI.ScriptableButton, Assembly-CSharp
   _interactable: 1
   _toDefaultTween: {fileID: 6166405072980162321}
   _toHoverTween: {fileID: 8101944453409084058}
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 112507611, guid: 3ac8b30df68dcde478261d8e0591e736, type: 3}
+  m_Sprite: {fileID: 9101418879050356322, guid: 3ac8b30df68dcde478261d8e0591e736, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1

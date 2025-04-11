@@ -12,8 +12,8 @@ namespace LudumDare57.UI
 {
     public class PauseMenu : MonoBehaviour
     {
-        [SerializeField] private FeedbackButton _menuButton;
-        [SerializeField] private FeedbackButton _resumeButton;
+        [SerializeField] private ScriptableButton _menuButton;
+        [SerializeField] private ScriptableButton _resumeButton;
         [SerializeField] private ScriptableTween _openTween;
         [SerializeField] private ScriptableTween _closeTween;
         

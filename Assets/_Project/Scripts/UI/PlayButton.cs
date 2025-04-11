@@ -8,21 +8,21 @@ using UnityEngine;
 
 namespace LudumDare57.UI
 {
-    [RequireComponent(typeof(FeedbackButton))]
+    [RequireComponent(typeof(ScriptableButton))]
     public class PlayButton : MonoBehaviour
     {
-        [SerializeField] private FeedbackButton _feedbackButton;
+        [SerializeField] private ScriptableButton _scriptableButton;
         private IDisposable _disposable;
         
         private void OnValidate()
         {
-            if (!_feedbackButton)
-                _feedbackButton = GetComponent<FeedbackButton>();
+            if (!_scriptableButton)
+                _scriptableButton = GetComponent<ScriptableButton>();
         }
 
         private void OnEnable()
         {
-            _disposable = _feedbackButton.ObserveFeedbackStart().Subscribe(_ =>
+            _disposable = _scriptableButton.ObserveFeedbackStart().Subscribe(_ =>
                 SceneManager.Scene(CMS.Scenes.Game).Single().Load(Runtime.CancellationToken).Forget());
         }
 
