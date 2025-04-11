@@ -3,6 +3,7 @@ using JetBrains.Annotations;
 using R3;
 using TSS.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -31,7 +32,7 @@ namespace LudumDare57.UI
             TopToBottom,
             BottomToTop
         }
-        
+     
         public bool Interactable
         {
             set
@@ -126,6 +127,10 @@ namespace LudumDare57.UI
         [SerializeField] private ScriptableTween _toHoverTween;
         [SerializeField] private ScriptableTween _toDragTween;
         [SerializeField] private ScriptableTween _toDisabledTween;
+        [Space]
+        [SerializeField] private UnityEvent _onEnterEvent = new();
+        [SerializeField] private UnityEvent _onDownEvent = new();
+        [SerializeField] private UnityEvent _onDragEvent = new();
 
         private RectTransform rectTransform => (RectTransform) transform;
         
@@ -196,6 +201,7 @@ namespace LudumDare57.UI
                 return;
             _hover = true;
             _onEnter.OnNext(Unit.Default);
+            _onEnterEvent.Invoke();
             UpdateState();
         }
 
@@ -214,6 +220,7 @@ namespace LudumDare57.UI
                 return;
             _drag = true;
             _onDragBegin.OnNext(Unit.Default);
+            _onDownEvent.Invoke();
             UpdateState();
             
             _offset = Vector2.zero;
@@ -329,6 +336,7 @@ namespace LudumDare57.UI
 
             float val = Mathf.Clamp01((localCursor - _offset)[axis] / rectTransform.rect.size[axis]);
             NormalizedValue = (reverse ? 1f - val : val);
+            _onDragEvent.Invoke();
         }
         
         private void KillTransitionTweens()

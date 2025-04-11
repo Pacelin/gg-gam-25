@@ -225,6 +225,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1489315797394169017, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
   m_PrefabInstance: {fileID: 46735256}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &46735258 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4568975769422562402, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
+  m_PrefabInstance: {fileID: 46735256}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c713507a0be74d999fab99807940d820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.UI.ScriptableSlider, Assembly-CSharp
 --- !u!1 &51204276
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 90644244}
   - component: {fileID: 90644245}
+  - component: {fileID: 90644246}
   m_Layer: 5
   m_Name: Layout
   m_TagString: Untagged
@@ -427,6 +439,21 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &90644246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90644243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710ecfee115449428e84c834d7d72235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.UI.VolumesView, Assembly-CSharp
+  _master: {fileID: 46735258}
+  _music: {fileID: 250990568}
+  _sfx: {fileID: 442440728}
 --- !u!1001 &250990566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -533,6 +560,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1489315797394169017, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
   m_PrefabInstance: {fileID: 250990566}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &250990568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4568975769422562402, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
+  m_PrefabInstance: {fileID: 250990566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c713507a0be74d999fab99807940d820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.UI.ScriptableSlider, Assembly-CSharp
 --- !u!1001 &442440726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -639,6 +677,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1489315797394169017, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
   m_PrefabInstance: {fileID: 442440726}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &442440728 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4568975769422562402, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
+  m_PrefabInstance: {fileID: 442440726}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c713507a0be74d999fab99807940d820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.UI.ScriptableSlider, Assembly-CSharp
 --- !u!1 &890018450
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,7 +777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1019266886}
   m_Layer: 5
-  m_Name: Row_3
+  m_Name: P_Sound_Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -810,7 +859,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1295,7 +1344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2006780163}
   m_Layer: 5
-  m_Name: Row_1
+  m_Name: P_Master_Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1332,7 +1381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2117578174}
   m_Layer: 5
-  m_Name: Row_2
+  m_Name: P_Music_Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
