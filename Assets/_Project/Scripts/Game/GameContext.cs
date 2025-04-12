@@ -12,5 +12,7 @@ namespace GGJam25.Game
         public static DroneStorage DroneStorage { get; set; }
         
         public static DroneStationComponent DroneStation { get; set; }
+        
+        public static int CollectedKeys { get; set; }
     }
 }
