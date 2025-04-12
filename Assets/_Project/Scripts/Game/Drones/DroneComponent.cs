@@ -14,15 +14,17 @@ namespace GGJam25.Game.Drones
         
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private LayerMask _floorLayerMask;
+        [SerializeField] private float _stopDistance = 1;
         [SerializeField] private ScriptableTween _deathTween;
         
         private bool _activeInput;
+        private IDisposable _disposable;
         private DroneHealth _health = new DroneHealth();
 
         private void OnEnable()
         {
             _health = new DroneHealth();
-            _health.OnKill.Subscribe(_ =>
+            _disposable = _health.OnKill.Subscribe(_ =>
             {
                 _deathTween.Play();
                 _deathTween.WaitWhilePlay().ContinueWith(() => GameContext.DroneStation.Revive());
@@ -31,7 +33,7 @@ namespace GGJam25.Game.Drones
 
         private void OnDisable()
         {
-            throw new NotImplementedException();
+            _disposable?.Dispose();
         }
 
         private void Update()
@@ -58,11 +60,18 @@ namespace GGJam25.Game.Drones
                 return;
             
             var targetRotation = Quaternion.LookRotation(targetPosition - _rigidbody.position);
-            var pos = Vector3.MoveTowards(_rigidbody.position, targetPosition, 
-                GameContext.DroneUpgrades.LinearSpeed.CurrentValue * Time.fixedDeltaTime);
             var rot = Quaternion.RotateTowards(_rigidbody.rotation, targetRotation, 
                 GameContext.DroneUpgrades.AngularSpeed.CurrentValue * Time.fixedDeltaTime);
-            _rigidbody.Move(pos, rot);
+            if (Vector3.Distance(targetPosition, _rigidbody.position) < _stopDistance)
+            {
+                _rigidbody.MoveRotation(rot);
+            }
+            else
+            {
+                var pos = Vector3.MoveTowards(_rigidbody.position, targetPosition, 
+                    GameContext.DroneUpgrades.LinearSpeed.CurrentValue * Time.fixedDeltaTime);
+                _rigidbody.Move(pos, rot);
+            }
         }
     }
 }
