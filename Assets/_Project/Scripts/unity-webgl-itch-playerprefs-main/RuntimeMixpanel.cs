@@ -13,7 +13,7 @@ namespace Jammer
     {
         public void DeleteKey(string key) => UserDataManager.DeleteKey(key);
 
-        public int GetInt(string key) => int.Parse(UserDataManager.GetString(key));
+        public int GetInt(string key) => UserDataManager.GetInt(key);
         public int GetInt(string key, int defaultValue) => UserDataManager.GetInt(key, defaultValue);
 
         public string GetString(string key) => UserDataManager.GetString(key);
@@ -21,7 +21,7 @@ namespace Jammer
 
         public bool HasKey(string key) => UserDataManager.HasKey(key);
 
-        public void SetInt(string key, int value) => UserDataManager.SetString(key, value.ToString());
+        public void SetInt(string key, int value) => UserDataManager.SetInt(key, value);
         public void SetString(string key, string value) => UserDataManager.SetString(key, value);
     
         public UniTask Initialize(CancellationToken cancellationToken)

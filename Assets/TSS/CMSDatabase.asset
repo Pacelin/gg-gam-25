@@ -41,3 +41,7 @@ MonoBehaviour:
     CMSName: Upgrades/Radar
     ComponentName: GameObject
     Namespace: 
+  - GUID: 75184763ce2d202418292afb8883c294
+    CMSName: Prefabs/HUD
+    ComponentName: HudComponent
+    Namespace: GGJam25.Game.Drones.HUD

@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using GGJam25.Game.Drones;
+using GGJam25.Game.Drones.HUD;
 
 namespace GGJam25.Game
 {
@@ -12,6 +13,7 @@ namespace GGJam25.Game
         public static DroneStorage DroneStorage { get; set; }
         
         public static DroneStationComponent DroneStation { get; set; }
+        public static HudComponent HUD { get; set; }
         
         public static int CollectedKeys { get; set; }
     }
