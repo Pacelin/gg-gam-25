@@ -1,4 +1,5 @@
-﻿using VContainer;
+﻿using UnityEngine;
+using VContainer;
 using VContainer.Unity;
 
 namespace LudumDare57.Game
@@ -9,5 +10,21 @@ namespace LudumDare57.Game
         {
             builder.RegisterEntryPoint<GameManager>();
         }
+    }
+
+    public class LevelComponent : MonoBehaviour
+    {
+        [SerializeField] private HubComponent _hub;
+        [SerializeField] private RoomComponent[] _rooms;
+    }
+    
+    public class RoomComponent : MonoBehaviour
+    {
+        [SerializeField] private Transform _doors;
+    }
+
+    public class HubComponent : MonoBehaviour
+    {
+        
     }
 }
