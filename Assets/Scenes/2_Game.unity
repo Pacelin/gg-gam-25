@@ -740,7 +740,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 391b2448292c4b4f90c19ccbb41b413d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: LudumDare57.Game.GameScope, Assembly-CSharp
+  m_EditorClassIdentifier: GGJam25.Game.GameScope, Assembly-CSharp
   parentReference:
     TypeName: 
   autoRun: 1
