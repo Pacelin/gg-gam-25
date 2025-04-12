@@ -22,14 +22,38 @@ namespace GGJam25.Game.Drones
         private IDisposable _disposable;
         private DroneHealth _health = new DroneHealth();
 
+        public void Lock()
+        {
+            _locked = true;
+            _rigidbody.isKinematic = true;
+        }
+
+        public void Unlock()
+        {
+            _locked = false;
+            _rigidbody.isKinematic = false;
+        }
+
+        public void SetPosition(Vector3 position)
+        {
+            _rigidbody.position = position;
+        }
+        
         private void OnEnable()
         {
             _health = new DroneHealth();
             _disposable = _health.OnKill.Subscribe(_ =>
             {
-                GameContext.DroneStation.Death();
-                _deathTween.Play();
-                _deathTween.WaitWhilePlay().ContinueWith(() => GameContext.DroneStation.Spawn());
+                GameContext.Level.Hub.Station.Death();
+                if (_deathTween)
+                {
+                    _deathTween.Play();
+                    _deathTween.WaitWhilePlay().ContinueWith(() => GameContext.Level.Hub.Station.Revive());
+                }
+                else
+                {
+                    GameContext.Level.Hub.Station.Revive();
+                }
             });
         }
 
@@ -47,9 +71,13 @@ namespace GGJam25.Game.Drones
 
         private void FixedUpdate()
         {
+            _rigidbody.linearVelocity = Vector3.zero;
+            _rigidbody.angularVelocity = Vector3.zero;
             if (Runtime.IsPaused)
                 return;
             if (!_activeInput)
+                return;
+            if (_locked)
                 return;
 
             Vector3 targetPosition;

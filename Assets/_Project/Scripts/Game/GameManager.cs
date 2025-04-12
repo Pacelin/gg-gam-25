@@ -20,7 +20,11 @@ namespace GGJam25.Game
             GameContext.DroneStorage = new DroneStorage();
             GameContext.CollectedKeys = 0;
 
+            GameContext.OctagonController = Object.Instantiate(CMS.Prefabs.OctagonController);
+            GameContext.Level = Object.Instantiate(CMS.Prefabs.Level);
             GameContext.HUD = Object.Instantiate(CMS.Prefabs.HUD);
+            
+            GameContext.Level.Hub.Station.Spawn();
         }
 
         public void Tick()
