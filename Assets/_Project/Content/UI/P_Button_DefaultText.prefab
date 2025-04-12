@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8642151841060824161}
   - component: {fileID: 5562901253331094376}
+  - component: {fileID: 5330869514340470849}
   m_Layer: 5
   m_Name: Hover
   m_TagString: Untagged
@@ -61,6 +62,25 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &5330869514340470849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773318245115765877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544e5dfeefb4470ab1dccc05f3993dd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventRef:
+    Guid:
+      Data1: -73757971
+      Data2: 1092300725
+      Data3: 530329010
+      Data4: 2045083333
+    Path: event:/UI/Click
 --- !u!1 &4478640272862256810
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,3 +576,21 @@ MonoBehaviour:
   _toDisabledTween: {fileID: 8086413766727771417}
   _feedbackTween: {fileID: 0}
   _lockInputOnFeedback: 0
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5330869514340470849}
+        m_TargetAssemblyTypeName: TSS.Audio.SoundEventComponent, TSS.Audio.FMOD
+        m_MethodName: PlayOneShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onDownEvent:
+    m_PersistentCalls:
+      m_Calls: []
