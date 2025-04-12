@@ -21,3 +21,7 @@ MonoBehaviour:
     CMSName: Scenes/Game
     ComponentName: GameObject
     Namespace: 
+  - GUID: 97efd316d56a40742add1e0443e1e0bc
+    CMSName: GameBalance
+    ComponentName: GameObject
+    Namespace: 

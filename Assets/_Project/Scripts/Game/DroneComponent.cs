@@ -1,22 +1,14 @@
 ﻿using TSS.Core;
 using UnityEngine;
 
-namespace LudumDare57.Game
+namespace GGJam25.Game
 {
-    [System.Serializable]
-    public struct SpeedLevel
-    {
-        public float LinearSpeed;
-        public float AngularSpeed;
-    }
-    
     public class DroneComponent : MonoBehaviour
     {
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private Vector3 _flyOffset;
         [Space] 
         [SerializeField] private LayerMask _floorLayerMask;
-        [SerializeField] private SpeedLevel[] _speedLevels;
 
         private bool _activeInput;
 
@@ -45,10 +37,10 @@ namespace LudumDare57.Game
             
             var targetRotation = Quaternion.LookRotation(targetPosition - _rigidbody.position);
             
-            var speedLevel = _speedLevels[GameContext.DroneSpeedLevel];
-            var pos = Vector3.MoveTowards(_rigidbody.position, targetPosition, speedLevel.LinearSpeed * Time.fixedDeltaTime);
-            var rot = Quaternion.RotateTowards(_rigidbody.rotation, targetRotation, speedLevel.AngularSpeed * Time.fixedDeltaTime);
-            _rigidbody.Move(pos, rot);
+            //var speedLevel = _speedLevels[GameContext.DroneSpeedLevel.Value];
+            //var pos = Vector3.MoveTowards(_rigidbody.position, targetPosition, speedLevel.LinearSpeed * Time.fixedDeltaTime);
+            //var rot = Quaternion.RotateTowards(_rigidbody.rotation, targetRotation, speedLevel.AngularSpeed * Time.fixedDeltaTime);
+            //_rigidbody.Move(pos, rot);
         }
     }
 }

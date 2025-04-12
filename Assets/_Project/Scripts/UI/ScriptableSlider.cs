@@ -7,7 +7,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace LudumDare57.UI
+namespace GGJam25.UI
 {
     [PublicAPI] 
     [RequireComponent(typeof(Image))]

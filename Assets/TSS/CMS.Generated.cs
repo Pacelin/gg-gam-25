@@ -8,6 +8,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine.AddressableAssets;
 using JetBrains.Annotations;
 using UnityEngine;
+using GGJam25.Game.Balance;
 using TSS.Core;
 
 namespace TSS.ContentManagement
@@ -17,11 +18,14 @@ namespace TSS.ContentManagement
     [RuntimeOrder(ERuntimeOrder.SystemRegistration)]
     public class CMS : IRuntimeLoader
     {
+		public static GameBalanceConfig GameBalance { get; private set; }
  
 
         public async UniTask Initialize(CancellationToken cancellationToken)
         {
 			await Scenes.Initialize(cancellationToken);
+			GameBalance = await Addressables.LoadAssetAsync<GameBalanceConfig>("Game Balance")
+				.ToUniTask(cancellationToken: cancellationToken);
         }
 
         public void Dispose() { }

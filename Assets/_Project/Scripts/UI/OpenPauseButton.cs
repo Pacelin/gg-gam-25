@@ -2,7 +2,7 @@
 using R3;
 using UnityEngine;
 
-namespace LudumDare57.UI
+namespace GGJam25.UI
 {
     [RequireComponent(typeof(ScriptableButton))]
     public class OpenPauseButton : MonoBehaviour

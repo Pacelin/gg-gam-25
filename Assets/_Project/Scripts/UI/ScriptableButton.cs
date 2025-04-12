@@ -7,7 +7,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace LudumDare57.UI
+namespace GGJam25.UI
 {
     [PublicAPI]
     [RequireComponent(typeof(Image))]
@@ -57,6 +57,7 @@ namespace LudumDare57.UI
         [Space] 
         [SerializeField] private UnityEvent _onEnterEvent = new();
         [SerializeField] private UnityEvent _onDownEvent = new();
+        [SerializeField] private UnityEvent _onClickEvent = new();
         
         private bool _down;
         private bool _hover;
