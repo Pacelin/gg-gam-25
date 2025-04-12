@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GGJam25.Game.Indicators
 {
-    public class ArrowMeterDroneBar : MonoBehaviour
+    public class ArrowMeterDroneBar : DroneBar
     {
         [SerializeField] private Transform _origin;
         [SerializeField] private float _rotation0;
@@ -12,7 +12,7 @@ namespace GGJam25.Game.Indicators
         
         private IDisposable _dipsosable;
         
-        public void Initialize(Observable<float> fill)
+        public override void Initialize(Observable<float> fill)
         {
             _dipsosable?.Dispose();
             _dipsosable = fill.Subscribe(f =>
