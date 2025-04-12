@@ -15,6 +15,7 @@ namespace GGJam25.Game
             _cts = CancellationTokenSource.CreateLinkedTokenSource(Runtime.CancellationToken);
             GameContext.CancellationToken = _cts.Token;
             GameContext.DroneUpgrades = new DroneUpgrades();
+            GameContext.DroneStorage = new DroneStorage();
         }
 
         public void Tick()

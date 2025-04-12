@@ -55,6 +55,8 @@ namespace TSS.Audio
 		public static SoundEvent_UI_Hover UI_Hover { get; } = new();
 		public static SoundEvent_UI_Slider UI_Slider { get; } = new();
 		public static SoundEvent_UI_Click UI_Click { get; } = new();
+		public static SoundEvent_MainMenu_OST MainMenu_OST { get; } = new();
+		public static SoundEvent_Game_ResourceCollect Game_ResourceCollect { get; } = new();
     
 		private System.IDisposable _focusDisposable;
 		
@@ -147,9 +149,51 @@ namespace TSS.Audio
 	public class SoundEvent_UI_Click : ISoundEvent
 	{
 		public bool IsOneShot => true;
-		public float Length => 0;
+		public float Length => 107;
 
 		private static readonly FMOD.GUID _guid = new FMOD.GUID() { Data1 = -73757971, Data2 = 1092300725, Data3 = 530329010, Data4 = 2045083333 };
+
+		public void PlayOneShot() => RuntimeManager.PlayOneShot(_guid);
+		public void PlayOneShotAttached(GameObject attachTo) => RuntimeManager.PlayOneShotAttached(_guid, attachTo);
+		public void PlayOneShotInPoint(Vector3 point) => RuntimeManager.PlayOneShot(_guid, point);
+
+		public Instance CreateInstance() => new Instance(RuntimeManager.CreateInstance(_guid));
+		ISoundEventInstance ISoundEvent.CreateInstance() => CreateInstance();
+
+		public class Instance : SoundEventInstance
+		{
+			public Instance(FMOD.Studio.EventInstance eventInstance) : base(eventInstance) { }
+
+		}
+	}
+
+	public class SoundEvent_MainMenu_OST : ISoundEvent
+	{
+		public bool IsOneShot => false;
+		public float Length => 240048;
+
+		private static readonly FMOD.GUID _guid = new FMOD.GUID() { Data1 = -1598096075, Data2 = 1227682573, Data3 = -472549705, Data4 = 315814700 };
+
+		public void PlayOneShot() => RuntimeManager.PlayOneShot(_guid);
+		public void PlayOneShotAttached(GameObject attachTo) => RuntimeManager.PlayOneShotAttached(_guid, attachTo);
+		public void PlayOneShotInPoint(Vector3 point) => RuntimeManager.PlayOneShot(_guid, point);
+
+		public Instance CreateInstance() => new Instance(RuntimeManager.CreateInstance(_guid));
+		ISoundEventInstance ISoundEvent.CreateInstance() => CreateInstance();
+
+		public class Instance : SoundEventInstance
+		{
+			public Instance(FMOD.Studio.EventInstance eventInstance) : base(eventInstance) { }
+
+		}
+	}
+
+	public class SoundEvent_Game_ResourceCollect : ISoundEvent
+	{
+		public bool IsOneShot => true;
+		public float Length => 0;
+
+		private static readonly FMOD.GUID _guid = new FMOD.GUID() { Data1 = -1911356674, Data2 = 1131494033, Data3 = -44541799, Data4 = -294980644 };
 
 		public void PlayOneShot() => RuntimeManager.PlayOneShot(_guid);
 		public void PlayOneShotAttached(GameObject attachTo) => RuntimeManager.PlayOneShotAttached(_guid, attachTo);
