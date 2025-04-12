@@ -46,15 +46,12 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c97af090432e46f995114263c9e8be37, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: LudumDare57.Game.DroneComponent, Assembly-CSharp
+  m_EditorClassIdentifier: GGJam25.Game.DroneComponent, Assembly-CSharp
   _rigidbody: {fileID: 5642102946893611645}
   _flyOffset: {x: 0, y: 0.6, z: 0}
   _floorLayerMask:
     serializedVersion: 2
     m_Bits: 8
-  _speedLevels:
-  - LinearSpeed: 4
-    AngularSpeed: 200
 --- !u!54 &5642102946893611645
 Rigidbody:
   m_ObjectHideFlags: 0
