@@ -13,7 +13,6 @@ namespace GGJam25.Game
         {
             _cts = CancellationTokenSource.CreateLinkedTokenSource(Runtime.CancellationToken);
             GameContext.CancellationToken = _cts.Token;
-            GameContext.DroneSpeedLevel = new(0);
         }
 
         public void Tick()
