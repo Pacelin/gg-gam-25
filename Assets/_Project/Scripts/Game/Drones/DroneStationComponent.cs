@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+﻿using R3;
+using UnityEngine;
 
 namespace GGJam25.Game.Drones
 {
     public class DroneStationComponent : MonoBehaviour
     {
-        public DroneComponent ActiveDrone => _activeDrone;
-        private DroneComponent _activeDrone;
+        public ReadOnlyReactiveProperty<DroneComponent> ActiveDrone => _activeDrone;
+        private ReactiveProperty<DroneComponent> _activeDrone;
         
         public void Revive()
         {
