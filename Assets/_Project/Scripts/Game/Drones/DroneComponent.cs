@@ -1,14 +1,38 @@
-﻿using TSS.Core;
+﻿using System;
+using Cysharp.Threading.Tasks;
+using GGJam25.Game.Indicators;
+using R3;
+using TSS.Core;
+using TSS.Tweening;
 using UnityEngine;
 
 namespace GGJam25.Game.Drones
 {
     public class DroneComponent : MonoBehaviour
     {
+        public DroneHealth Health => _health;
+        
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private LayerMask _floorLayerMask;
-
+        [SerializeField] private ScriptableTween _deathTween;
+        
         private bool _activeInput;
+        private DroneHealth _health = new DroneHealth();
+
+        private void OnEnable()
+        {
+            _health = new DroneHealth();
+            _health.OnKill.Subscribe(_ =>
+            {
+                _deathTween.Play();
+                _deathTween.WaitWhilePlay().ContinueWith(() => GameContext.DroneStation.Revive());
+            });
+        }
+
+        private void OnDisable()
+        {
+            throw new NotImplementedException();
+        }
 
         private void Update()
         {

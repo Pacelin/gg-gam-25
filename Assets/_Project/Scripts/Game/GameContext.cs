@@ -9,5 +9,7 @@ namespace GGJam25.Game
     {
         public static CancellationToken CancellationToken { get; set; }
         public static DroneUpgrades DroneUpgrades { get; set; }
+        
+        public static DroneStationComponent DroneStation { get; set; }
     }
 }
