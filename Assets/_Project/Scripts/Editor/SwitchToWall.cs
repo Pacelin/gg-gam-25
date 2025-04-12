@@ -32,6 +32,7 @@ namespace GGJam25.Editor
                 prefabInstance.name = "Wall";
                 prefabInstance.transform.position = pos;
                 prefabInstance.transform.rotation = rotation;
+                EditorUtility.SetDirty(parent);
                 Object.DestroyImmediate(go);
             }
         }
