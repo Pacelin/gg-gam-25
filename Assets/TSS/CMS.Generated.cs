@@ -9,6 +9,7 @@ using UnityEngine.AddressableAssets;
 using JetBrains.Annotations;
 using UnityEngine;
 using GGJam25.Game.Drones;
+using GGJam25.Game.Drones.HUD;
 using TSS.Core;
 
 namespace TSS.ContentManagement
@@ -24,6 +25,7 @@ namespace TSS.ContentManagement
         {
 			await Scenes.Initialize(cancellationToken);
 			await Upgrades.Initialize(cancellationToken);
+			await Prefabs.Initialize(cancellationToken);
         }
 
         public void Dispose() { }
@@ -59,6 +61,17 @@ namespace TSS.ContentManagement
 					.ToUniTask(cancellationToken: cancellationToken);
 				Radar = await Addressables.LoadAssetAsync<DroneRadarUpgrade>("Drone Radar Upgrade")
 					.ToUniTask(cancellationToken: cancellationToken);
+			}
+		}
+		[PublicAPI]
+		public static class Prefabs
+		{
+			public static HudComponent HUD { get; private set; }
+
+			public static async UniTask Initialize(CancellationToken cancellationToken)
+			{
+				HUD = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/GUI/P_HUD.prefab")
+					.ToUniTask(cancellationToken: cancellationToken)).GetComponent<HudComponent>();
 			}
 		}
     }
