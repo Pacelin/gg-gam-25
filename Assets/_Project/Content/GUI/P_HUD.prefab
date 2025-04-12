@@ -379,6 +379,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2215547684297801978}
     m_Modifications:
+    - target: {fileID: 3131081538689235686, guid: e9d976fd06c969645aacdcca59d952e5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1187519461, guid: c55ff9ee10f719c42b97ea56dedc658a, type: 3}
     - target: {fileID: 3651190434103144983, guid: e9d976fd06c969645aacdcca59d952e5, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -491,6 +495,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8603853895217603121, guid: e9d976fd06c969645aacdcca59d952e5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1187519461, guid: c55ff9ee10f719c42b97ea56dedc658a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

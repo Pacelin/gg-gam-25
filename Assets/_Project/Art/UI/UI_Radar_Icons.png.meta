@@ -118,7 +118,7 @@ TextureImporter:
         width: 257
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -140,7 +140,7 @@ TextureImporter:
         width: 257
         height: 257
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,7 +162,7 @@ TextureImporter:
         width: 321
         height: 257
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -171,6 +171,28 @@ TextureImporter:
       bones: []
       spriteID: 1f9124099cc3404488b4970067841082
       internalID: -1759436534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Radar_Icons_3
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 642
+        width: 238
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4de4646154b06489dc820a7de32722
+      internalID: -1187519461
       vertices: []
       indices: 
       edges: []
@@ -192,6 +214,7 @@ TextureImporter:
       UI_Radar_Icons_0: 1026845473
       UI_Radar_Icons_1: 550452151
       UI_Radar_Icons_2: -1759436534
+      UI_Radar_Icons_3: -1187519461
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
