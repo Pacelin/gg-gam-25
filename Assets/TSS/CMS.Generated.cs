@@ -8,7 +8,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine.AddressableAssets;
 using JetBrains.Annotations;
 using UnityEngine;
-using GGJam25.Game.Balance;
+using GGJam25.Game.Drones;
 using TSS.Core;
 
 namespace TSS.ContentManagement
@@ -43,12 +43,15 @@ namespace TSS.ContentManagement
 		{
 			public static DroneSpeedUpgrade Speed { get; private set; }
 			public static DroneStorageUpgrade Storage { get; private set; }
+			public static DroneVacuumUpgrade Vacuum { get; private set; }
 
 			public static async UniTask Initialize(CancellationToken cancellationToken)
 			{
 				Speed = await Addressables.LoadAssetAsync<DroneSpeedUpgrade>("Drone Speed Upgrade")
 					.ToUniTask(cancellationToken: cancellationToken);
 				Storage = await Addressables.LoadAssetAsync<DroneStorageUpgrade>("Drone Storage Upgrade")
+					.ToUniTask(cancellationToken: cancellationToken);
+				Vacuum = await Addressables.LoadAssetAsync<DroneVacuumUpgrade>("Drone Vacuum Upgrade")
 					.ToUniTask(cancellationToken: cancellationToken);
 			}
 		}

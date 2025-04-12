@@ -1,7 +1,7 @@
 ﻿using TSS.Utils;
 using UnityEngine;
 
-namespace GGJam25.Game.Balance
+namespace GGJam25.Game.Drones
 {
     [CreateSingletonAsset("Assets/_Project/Configs/Upgrades/SO_DroneSpeed.asset", "Drone Speed Upgrade")]
     public class DroneSpeedUpgrade : DroneUpgrade
@@ -20,15 +20,15 @@ namespace GGJam25.Game.Balance
             base.OnView(currentLevel, view);
             if (isMax)
             {
-                view.AddInfo(_linearSpeedValueStr, _linearSpeeds[currentLevel].ToString());
-                view.AddInfo(_angularSpeedValueStr, _angularSpeeds[currentLevel].ToString());
+                view.AddInfo(_linearSpeedValueStr, _linearSpeeds[currentLevel].ToString("0.#"));
+                view.AddInfo(_angularSpeedValueStr, _angularSpeeds[currentLevel].ToString("0.#"));
             }
             else
             {
-                view.AddInfo(_linearSpeedValueStr, _linearSpeeds[currentLevel].ToString(),
-                    _linearSpeeds[currentLevel + 1].ToString());
-                view.AddInfo(_angularSpeedValueStr, _angularSpeeds[currentLevel].ToString(),
-                    _angularSpeeds[currentLevel + 1].ToString());
+                view.AddInfo(_linearSpeedValueStr, _linearSpeeds[currentLevel].ToString("0.#"),
+                    _linearSpeeds[currentLevel + 1].ToString("0.#"));
+                view.AddInfo(_angularSpeedValueStr, _angularSpeeds[currentLevel].ToString("0.#"),
+                    _angularSpeeds[currentLevel + 1].ToString("0.#"));
             }
         }
     }

@@ -29,3 +29,7 @@ MonoBehaviour:
     CMSName: Upgrades/Storage
     ComponentName: GameObject
     Namespace: 
+  - GUID: 696e6bc210a7452458cd3d80a2d5d017
+    CMSName: SO_DroneVacuum
+    ComponentName: GameObject
+    Namespace: 

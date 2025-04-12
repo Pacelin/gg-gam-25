@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace GGJam25.Game.Balance
+namespace GGJam25.Game.Drones
 {
     public class DroneUpgradeView : MonoBehaviour
     {

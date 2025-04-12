@@ -20,6 +20,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 696e6bc210a7452458cd3d80a2d5d017
+    m_Address: Drone Vacuum Upgrade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6e0dec83e21487844b2c8b6d037a4179
     m_Address: Drone Storage Upgrade
     m_ReadOnly: 0
@@ -32,11 +37,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 82bdb546796e2da4eb218e0597a05672
     m_Address: Assets/Scenes/1_Menu.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9c1141ef444e510419479ba31f96c064
-    m_Address: Resources Storage Config
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GGJam25.Game.Balance
+namespace GGJam25.Game.Drones
 {
     public abstract class DroneUpgrade : ScriptableObject
     {
