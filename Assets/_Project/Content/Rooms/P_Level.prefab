@@ -62,6 +62,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8771229891035380353}
+  - component: {fileID: 3682737369015298104}
   m_Layer: 0
   m_Name: P_Level
   m_TagString: Untagged
@@ -150,6 +151,19 @@ Transform:
   - {fileID: 923846701745169592}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3682737369015298104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8525978709847956678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69be3448449048f39d971b145b8d8761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.LevelComponent, Assembly-CSharp
+  _hub: {fileID: 1181317314768669846}
 --- !u!1001 &124979006749912282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2946,6 +2960,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d7792b5035236244ad1f1284d8fff7e, type: 3}
+--- !u!114 &1181317314768669846 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3971743239828116429, guid: 7d7792b5035236244ad1f1284d8fff7e, type: 3}
+  m_PrefabInstance: {fileID: 2844751832541929307}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38733d5512a49a9abe59da0196c80f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.HubComponent, Assembly-CSharp
 --- !u!4 &1926571160074971742 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4451272748186629381, guid: 7d7792b5035236244ad1f1284d8fff7e, type: 3}

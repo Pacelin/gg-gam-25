@@ -67,11 +67,17 @@ namespace TSS.ContentManagement
 		public static class Prefabs
 		{
 			public static HudComponent HUD { get; private set; }
+			public static DroneComponent Drone { get; private set; }
+			public static LevelComponent Level { get; private set; }
 
 			public static async UniTask Initialize(CancellationToken cancellationToken)
 			{
 				HUD = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/GUI/P_HUD.prefab")
 					.ToUniTask(cancellationToken: cancellationToken)).GetComponent<HudComponent>();
+				Drone = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/Rooms/P_Drone.prefab")
+					.ToUniTask(cancellationToken: cancellationToken)).GetComponent<DroneComponent>();
+				Level = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/Rooms/P_Level.prefab")
+					.ToUniTask(cancellationToken: cancellationToken)).GetComponent<LevelComponent>();
 			}
 		}
     }

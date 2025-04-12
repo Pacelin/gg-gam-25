@@ -16,7 +16,8 @@ namespace GGJam25.Game.Drones
         [SerializeField] private LayerMask _floorLayerMask;
         [SerializeField] private float _stopDistance = 1;
         [SerializeField] private ScriptableTween _deathTween;
-        
+
+        private bool _locked;
         private bool _activeInput;
         private IDisposable _disposable;
         private DroneHealth _health = new DroneHealth();
@@ -26,8 +27,9 @@ namespace GGJam25.Game.Drones
             _health = new DroneHealth();
             _disposable = _health.OnKill.Subscribe(_ =>
             {
+                GameContext.DroneStation.Death();
                 _deathTween.Play();
-                _deathTween.WaitWhilePlay().ContinueWith(() => GameContext.DroneStation.Revive());
+                _deathTween.WaitWhilePlay().ContinueWith(() => GameContext.DroneStation.Spawn());
             });
         }
 

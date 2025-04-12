@@ -10,17 +10,23 @@ namespace GGJam25.Game.Drones
         public ReadOnlyReactiveProperty<DroneComponent> ActiveDrone => _activeDrone;
 
         [SerializeField] private Transform _droneSpawnPoint;
-        
+        [SerializeField] private ScriptableTween _spawnTween;
+
         private ReactiveProperty<DroneComponent> _activeDrone;
 
+        public void Death()
+        {
+            GameContext.HUD.HideDroneCanvas();
+        }
+        
         public void Spawn()
         {
-            
+            GameContext.HUD.ShowDroneCanvas();
         }
         
         public void Revive()
         {
-            
+            Destroy(_activeDrone.Value.gameObject);
         }
     }
 }

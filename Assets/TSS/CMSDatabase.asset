@@ -45,3 +45,11 @@ MonoBehaviour:
     CMSName: Prefabs/HUD
     ComponentName: HudComponent
     Namespace: GGJam25.Game.Drones.HUD
+  - GUID: 8a78c897c6f9a1a4dadebca531e215f1
+    CMSName: Prefabs/Drone
+    ComponentName: DroneComponent
+    Namespace: GGJam25.Game.Drones
+  - GUID: 3bb1aba31e284674aa5a2112a56166e8
+    CMSName: Prefabs/Level
+    ComponentName: LevelComponent
+    Namespace: GGJam25.Game.Drones

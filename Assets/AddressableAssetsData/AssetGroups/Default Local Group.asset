@@ -20,6 +20,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3bb1aba31e284674aa5a2112a56166e8
+    m_Address: Assets/_Project/Content/Rooms/P_Level.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 62af7fca09f34c74481788e651479d18
     m_Address: Runtime Settings
     m_ReadOnly: 0
@@ -47,6 +52,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 82bdb546796e2da4eb218e0597a05672
     m_Address: Assets/Scenes/1_Menu.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a78c897c6f9a1a4dadebca531e215f1
+    m_Address: Assets/_Project/Content/Rooms/P_Drone.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
