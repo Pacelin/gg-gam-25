@@ -379,6 +379,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1244173758518570864, guid: 382c8f910e802b646b1d8b8883f2821b, type: 3}
+      propertyPath: m_EditorClassIdentifier
+      value: GGJam25.UI.PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1678801857846758594, guid: 382c8f910e802b646b1d8b8883f2821b, type: 3}
       propertyPath: m_SortingOrder
       value: 4
@@ -715,6 +719,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 366249946692549189, guid: 75184763ce2d202418292afb8883c294, type: 3}
+      propertyPath: m_EditorClassIdentifier
+      value: GGJam25.UI.OpenPauseButton, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2215547684297801978, guid: 75184763ce2d202418292afb8883c294, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -799,13 +807,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 4136578912923915383, guid: 75184763ce2d202418292afb8883c294, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5276973758918661354, guid: 75184763ce2d202418292afb8883c294, type: 3}
+      propertyPath: m_EditorClassIdentifier
+      value: GGJam25.UI.ScriptableButton, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6053525828724321887, guid: 75184763ce2d202418292afb8883c294, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7102013244226790958, guid: 75184763ce2d202418292afb8883c294, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -863,6 +879,10 @@ PrefabInstance:
     - target: {fileID: 4700260810835988351, guid: 8a78c897c6f9a1a4dadebca531e215f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404015341161173877, guid: 8a78c897c6f9a1a4dadebca531e215f1, type: 3}
+      propertyPath: m_EditorClassIdentifier
+      value: GGJam25.Game.DroneComponent, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -937,9 +957,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7742830721934763347, guid: 3bb1aba31e284674aa5a2112a56166e8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 2264663437727570203, guid: 3bb1aba31e284674aa5a2112a56166e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}

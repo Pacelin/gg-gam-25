@@ -11,5 +11,5 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f02aa3c95dd4b3a94633d366b4168e5, type: 3}
   m_Name: SO_ResourcesStorage
-  m_EditorClassIdentifier: GGJam25.Game.ResourcesStorageConfig, Assembly-CSharp
+  m_EditorClassIdentifier: 
   _capacityPerLevel: 

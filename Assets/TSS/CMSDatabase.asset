@@ -21,7 +21,11 @@ MonoBehaviour:
     CMSName: Scenes/Game
     ComponentName: GameObject
     Namespace: 
-  - GUID: 97efd316d56a40742add1e0443e1e0bc
-    CMSName: GameBalance
+  - GUID: e8880dfc11fadbc43bea2c7eb6317d78
+    CMSName: Upgrades/Speed
+    ComponentName: GameObject
+    Namespace: 
+  - GUID: 6e0dec83e21487844b2c8b6d037a4179
+    CMSName: Upgrades/Storage
     ComponentName: GameObject
     Namespace: 

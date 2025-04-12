@@ -6,14 +6,14 @@ namespace GGJam25.Game.Balance
     [CreateSingletonAsset("Assets/_Project/Configs/Upgrades/SO_DroneSpeed.asset", "Drone Speed Upgrade")]
     public class DroneSpeedUpgrade : DroneUpgrade
     {
-        public int[] LinearSpeeds => _linearSpeeds;
-        public int[] AngularSpeeds => _angularSpeeds;
+        public float[] LinearSpeeds => _linearSpeeds;
+        public float[] AngularSpeeds => _angularSpeeds;
         
         [Space] 
         [SerializeField] private string _linearSpeedValueStr = "Скорость: ";
         [SerializeField] private string _angularSpeedValueStr = "Скорость поворота: ";
-        [SerializeField] private int[] _linearSpeeds;
-        [SerializeField] private int[] _angularSpeeds;
+        [SerializeField] private float[] _linearSpeeds;
+        [SerializeField] private float[] _angularSpeeds;
 
         protected override void OnView(int currentLevel, DroneUpgradeView view, bool isMax)
         {

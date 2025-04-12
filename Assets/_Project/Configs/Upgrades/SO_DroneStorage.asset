@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63f4eac3a4434352bc074d4ab98b36b4, type: 3}
   m_Name: SO_DroneStorage
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: GGJam25.Game.Balance.DroneStorageUpgrade, Assembly-CSharp
   _name: 
   _description: 
   _icon: {fileID: 0}
