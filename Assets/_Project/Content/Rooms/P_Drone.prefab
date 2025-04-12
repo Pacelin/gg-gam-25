@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5642102946893611645}
   - component: {fileID: 733262152030122945}
   - component: {fileID: 6654582335738912269}
+  - component: {fileID: 3840609181487425409}
   m_Layer: 0
   m_Name: P_Drone
   m_TagString: Untagged
@@ -114,6 +115,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: GGJam25.Game.Drones.DroneInfluenceReciever, Assembly-CSharp
   _drone: {fileID: 6404015341161173877}
+--- !u!114 &3840609181487425409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145976455398115148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5655f45885c14aaaa78c334dea1b16b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.Collectables.DroneVacuumComponent,
+    Assembly-CSharp
+  _byLevel:
+  - {fileID: 7071512775179354530}
+  - {fileID: 8402325315191382283}
+  - {fileID: 2579389856389409132}
+  _firePoint: {fileID: 5989169065783742004}
+  _collectablesMask:
+    serializedVersion: 2
+    m_Bits: 1
+  _onCollectEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1334659767335648324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -174,5 +199,25 @@ PrefabInstance:
 --- !u!4 &1517449749152045999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fa7917c16152e6e459ba55b6555eea56, type: 3}
+  m_PrefabInstance: {fileID: 1334659767335648324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2579389856389409132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5670457902236838616, guid: fa7917c16152e6e459ba55b6555eea56, type: 3}
+  m_PrefabInstance: {fileID: 1334659767335648324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5989169065783742004 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4726638259273708144, guid: fa7917c16152e6e459ba55b6555eea56, type: 3}
+  m_PrefabInstance: {fileID: 1334659767335648324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7071512775179354530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8117358566206619110, guid: fa7917c16152e6e459ba55b6555eea56, type: 3}
+  m_PrefabInstance: {fileID: 1334659767335648324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8402325315191382283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1864868856170095281, guid: fa7917c16152e6e459ba55b6555eea56, type: 3}
   m_PrefabInstance: {fileID: 1334659767335648324}
   m_PrefabAsset: {fileID: 0}
