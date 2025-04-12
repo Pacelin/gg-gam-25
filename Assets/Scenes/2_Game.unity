@@ -881,9 +881,17 @@ PrefabInstance:
       propertyPath: m_fontMaterial
       value: 
       objectReference: {fileID: 1607908613}
+    - target: {fileID: 7742830721934763347, guid: 3bb1aba31e284674aa5a2112a56166e8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8525978709847956678, guid: 3bb1aba31e284674aa5a2112a56166e8, type: 3}
       propertyPath: m_Name
       value: P_Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 8525978709847956678, guid: 3bb1aba31e284674aa5a2112a56166e8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8771229891035380353, guid: 3bb1aba31e284674aa5a2112a56166e8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -930,6 +938,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7742830721934763347, guid: 3bb1aba31e284674aa5a2112a56166e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2264663437727570203, guid: 3bb1aba31e284674aa5a2112a56166e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 3bb1aba31e284674aa5a2112a56166e8, type: 3}
