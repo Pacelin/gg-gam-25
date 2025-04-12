@@ -7,7 +7,6 @@ namespace GGJam25.Game.Drones.Collectables
     {
         private void OnValidate() => GetComponent<Collider>().isTrigger = true;
 
-
         protected override void OnCollect()
         {
             AudioSystem.Game_KeyCollect.PlayOneShot();
