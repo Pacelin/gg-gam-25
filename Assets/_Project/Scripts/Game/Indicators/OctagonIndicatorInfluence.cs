@@ -2,8 +2,6 @@
 
 namespace GGJam25.Game.Indicators
 {
-    public class 
-    
     public class HealthIndicator
     {
         private ReactiveProperty<float> _water = new(0);
