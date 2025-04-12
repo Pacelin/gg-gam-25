@@ -31,7 +31,7 @@ namespace GGJam25.Game.Indicators
         {
             if (_killed)
                 return;
-            _temperature.Value = Mathf.Clamp(_water.Value + influence, -1, 1);
+            _temperature.Value = Mathf.Clamp(_temperature.Value + influence, -1, 1);
             if (_temperature.Value >= 1 || _temperature.Value <= -1)
             {
                 _killed = true;

@@ -53,3 +53,7 @@ MonoBehaviour:
     CMSName: Prefabs/Level
     ComponentName: LevelComponent
     Namespace: GGJam25.Game.Drones
+  - GUID: 23428ca5dbf175647868b5eabdd40756
+    CMSName: Prefabs/OctagonController
+    ComponentName: OctagonController
+    Namespace: GGJam25.Game.Drones

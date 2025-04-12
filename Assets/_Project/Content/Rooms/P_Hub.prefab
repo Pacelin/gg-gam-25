@@ -513,6 +513,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2263072371300298149, guid: 27081136428ac5e45a3a1891d03b2a20, type: 3}
+      propertyPath: _waterInfluence
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2263072371300298149, guid: 27081136428ac5e45a3a1891d03b2a20, type: 3}
+      propertyPath: _temperatureInfluence
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3928713486886363988, guid: 27081136428ac5e45a3a1891d03b2a20, type: 3}
       propertyPath: m_Name
       value: P_Hub

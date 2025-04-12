@@ -28,6 +28,8 @@ namespace GGJam25.Game.Drones
                 temp += influencer.TemperatureInfluence;
             }
 
+            water *= Time.deltaTime;
+            temp *= Time.deltaTime;
             water += Mathf.MoveTowards(_drone.Health.Water.CurrentValue, 0,
                 GameContext.DroneUpgrades.Stabilization.CurrentValue * Time.deltaTime) - _drone.Health.Water.CurrentValue;
             temp += Mathf.MoveTowards(_drone.Health.Temperature.CurrentValue, 0,

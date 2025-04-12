@@ -11,7 +11,7 @@ namespace GGJam25.Game.Indicators
         private void OnEnable()
         {
             _waterBar.Initialize(
-                GameContext.DroneStation.ActiveDrone
+                GameContext.Level.Hub.Station.ActiveDrone
                     .SelectMany(drone =>
                     {
                         if (drone)
@@ -19,7 +19,7 @@ namespace GGJam25.Game.Indicators
                         return Observable.Return<float>(0);
                     }));
             _tempBar.Initialize(
-                GameContext.DroneStation.ActiveDrone
+                GameContext.Level.Hub.Station.ActiveDrone
                     .SelectMany(drone =>
                     {
                         if (drone)
