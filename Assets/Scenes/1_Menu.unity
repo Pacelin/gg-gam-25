@@ -1556,6 +1556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_Play
       objectReference: {fileID: 0}
+    - target: {fileID: 8667645505059364730, guid: 7f3b127f8cee7434ba5ebd5622d05028, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
