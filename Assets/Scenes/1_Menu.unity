@@ -211,6 +211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Slider_Default
       objectReference: {fileID: 0}
+    - target: {fileID: 4568975769422562402, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
+      propertyPath: m_EditorClassIdentifier
+      value: LudumDare57.UI.ScriptableSlider, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7191971766437841924, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -450,7 +454,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710ecfee115449428e84c834d7d72235, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: LudumDare57.UI.VolumesView, Assembly-CSharp
+  m_EditorClassIdentifier: GGJam25.UI.VolumesView, Assembly-CSharp
   _master: {fileID: 46735258}
   _music: {fileID: 250990568}
   _sfx: {fileID: 442440728}
@@ -545,6 +549,10 @@ PrefabInstance:
     - target: {fileID: 3295147059108826337, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
       propertyPath: m_Name
       value: P_Slider_Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568975769422562402, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
+      propertyPath: m_EditorClassIdentifier
+      value: LudumDare57.UI.ScriptableSlider, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7191971766437841924, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -662,6 +670,10 @@ PrefabInstance:
     - target: {fileID: 3295147059108826337, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
       propertyPath: m_Name
       value: P_Slider_Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568975769422562402, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
+      propertyPath: m_EditorClassIdentifier
+      value: LudumDare57.UI.ScriptableSlider, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7191971766437841924, guid: 0d57967bb25a020418dd34402e0a902d, type: 3}
       propertyPath: m_SizeDelta.x

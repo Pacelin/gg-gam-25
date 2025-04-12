@@ -572,6 +572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Door
       objectReference: {fileID: 0}
+    - target: {fileID: 4741227475794734689, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
+      propertyPath: _octagon
+      value: 
+      objectReference: {fileID: 7320027541113854001}
     - target: {fileID: 5166825806221648897, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.36
@@ -642,6 +646,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Door (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4741227475794734689, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
+      propertyPath: _octagon
+      value: 
+      objectReference: {fileID: 7320027541113854001}
     - target: {fileID: 5166825806221648897, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.4
@@ -704,6 +712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Door (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4741227475794734689, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
+      propertyPath: _octagon
+      value: 
+      objectReference: {fileID: 7320027541113854001}
     - target: {fileID: 5166825806221648897, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.4
@@ -766,6 +778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4741227475794734689, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
+      propertyPath: _octagon
+      value: 
+      objectReference: {fileID: 7320027541113854001}
     - target: {fileID: 5166825806221648897, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.4
@@ -832,6 +848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Door (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4741227475794734689, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
+      propertyPath: _octagon
+      value: 
+      objectReference: {fileID: 7320027541113854001}
     - target: {fileID: 5166825806221648897, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.4
@@ -894,6 +914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Door (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4741227475794734689, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
+      propertyPath: _octagon
+      value: 
+      objectReference: {fileID: 7320027541113854001}
     - target: {fileID: 5166825806221648897, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.36
@@ -956,6 +980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Door (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4741227475794734689, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
+      propertyPath: _octagon
+      value: 
+      objectReference: {fileID: 7320027541113854001}
     - target: {fileID: 5166825806221648897, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1134,6 +1162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Door (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4741227475794734689, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
+      propertyPath: _octagon
+      value: 
+      objectReference: {fileID: 7320027541113854001}
     - target: {fileID: 5166825806221648897, guid: 2442d7f058f44e448b4f27e73c138e8d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

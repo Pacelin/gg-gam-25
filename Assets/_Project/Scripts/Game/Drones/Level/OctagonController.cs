@@ -44,7 +44,7 @@ namespace GGJam25.Game.Drones
                     _fadeCanvas.gameObject.SetActive(false);
                     if (door.Neighbour.Octagon == GameContext.Level.Hub.transform)
                         GameContext.DroneStorage.CollectDrone();
-                });
+                }).Play();
         }
 
         public void MoveCameraTo(Transform point, Action onFinished)
@@ -68,7 +68,7 @@ namespace GGJam25.Game.Drones
                         GameContext.Level.Hub.Station.ActiveDrone.CurrentValue.Unlock();
                     _fadeCanvas.gameObject.SetActive(false);
                     onFinished?.Invoke();
-                });
+                }).Play();
         }
     }
 }

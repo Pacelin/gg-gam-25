@@ -375,7 +375,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c713507a0be74d999fab99807940d820, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: LudumDare57.UI.ScriptableSlider, Assembly-CSharp
+  m_EditorClassIdentifier: GGJam25.UI.ScriptableSlider, Assembly-CSharp
   _interactable: 1
   _range: {x: 0, y: 1}
   _value: 0.5
@@ -387,6 +387,15 @@ MonoBehaviour:
   _toHoverTween: {fileID: 3458420592368983263}
   _toDragTween: {fileID: 4317492243535249598}
   _toDisabledTween: {fileID: 397385207818069508}
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _onDownEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _onDragEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!225 &9028996328473346464
 CanvasGroup:
   m_ObjectHideFlags: 0
