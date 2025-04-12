@@ -45,6 +45,7 @@ namespace TSS.ContentManagement
 			public static DroneStorageUpgrade Storage { get; private set; }
 			public static DroneVacuumUpgrade Vacuum { get; private set; }
 			public static DroneStabilizationUpgrade Stabilization { get; private set; }
+			public static DroneRadarUpgrade Radar { get; private set; }
 
 			public static async UniTask Initialize(CancellationToken cancellationToken)
 			{
@@ -55,6 +56,8 @@ namespace TSS.ContentManagement
 				Vacuum = await Addressables.LoadAssetAsync<DroneVacuumUpgrade>("Drone Vacuum Upgrade")
 					.ToUniTask(cancellationToken: cancellationToken);
 				Stabilization = await Addressables.LoadAssetAsync<DroneStabilizationUpgrade>("Drone Stabilization Upgrade")
+					.ToUniTask(cancellationToken: cancellationToken);
+				Radar = await Addressables.LoadAssetAsync<DroneRadarUpgrade>("Drone Radar Upgrade")
 					.ToUniTask(cancellationToken: cancellationToken);
 			}
 		}

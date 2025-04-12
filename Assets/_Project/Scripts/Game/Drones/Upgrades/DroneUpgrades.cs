@@ -43,6 +43,7 @@ namespace GGJam25.Game.Drones
             yield return (_vacuumLevel, CMS.Upgrades.Vacuum);
             yield return (_storageLevel, CMS.Upgrades.Storage);
             yield return (_speedLevel, CMS.Upgrades.Speed);
+            yield return (_radarLevel, CMS.Upgrades.Radar);
             yield return (_stabilizationLevel, CMS.Upgrades.Stabilization);
         }
     }

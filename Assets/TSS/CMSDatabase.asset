@@ -37,3 +37,7 @@ MonoBehaviour:
     CMSName: Upgrades/Stabilization
     ComponentName: GameObject
     Namespace: 
+  - GUID: eeab6373a1046894282f0f211862c08d
+    CMSName: Upgrades/Radar
+    ComponentName: GameObject
+    Namespace: 
