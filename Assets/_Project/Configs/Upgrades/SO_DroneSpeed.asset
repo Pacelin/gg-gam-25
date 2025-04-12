@@ -15,10 +15,12 @@ MonoBehaviour:
   _name: 
   _description: 
   _icon: {fileID: 0}
-  _prices: 
+  _prices: 0a000000
   _linearSpeedValueStr: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C: "
   _angularSpeedValueStr: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u043E\u0432\u043E\u0440\u043E\u0442\u0430: "
   _linearSpeeds:
   - 4
+  - 5
   _angularSpeeds:
   - 200
+  - 260
