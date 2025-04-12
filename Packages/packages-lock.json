@@ -40,6 +40,13 @@
       "dependencies": {},
       "url": "https://package.openupm.com"
     },
+    "com.mixpanel.unity": {
+      "version": "3.5.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.solidalloy.missing-script-type": {
       "version": "1.1.0",
       "depth": 1,
@@ -117,7 +124,8 @@
         "com.cysharp.r3": "1.2.9",
         "org.nuget.r3": "1.2.9",
         "org.nuget.observablecollections.r3": "3.3.3",
-        "com.tss.utils": "1.0.0"
+        "com.tss.utils": "1.0.0",
+        "com.mixpanel.unity": "3.5.1"
       }
     },
     "com.tss.jams": {

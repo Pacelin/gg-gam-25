@@ -1,7 +1,7 @@
 ﻿using JetBrains.Annotations;
 using UnityEngine;
 
-namespace LudumDare57.UI
+namespace GGJam25.UI
 {
     [PublicAPI]
     public class OverlayInputLock : MonoBehaviour

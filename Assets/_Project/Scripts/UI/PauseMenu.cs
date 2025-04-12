@@ -1,5 +1,4 @@
 using System;
-using System.Threading;
 using Cysharp.Threading.Tasks;
 using R3;
 using TSS.ContentManagement;
@@ -8,7 +7,7 @@ using TSS.SceneManagement;
 using TSS.Tweening;
 using UnityEngine;
 
-namespace LudumDare57.UI
+namespace GGJam25.UI
 {
     public class PauseMenu : MonoBehaviour
     {
