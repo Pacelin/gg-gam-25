@@ -398,7 +398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3826941986237971789, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: m_text
-      value: (-2, +1)
+      value: (-2, + 1)
       objectReference: {fileID: 0}
     - target: {fileID: 4788952938297427345, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: m_Name
@@ -1784,7 +1784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3826941986237971789, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: m_text
-      value: (+2, +1)
+      value: (+2, + 1)
       objectReference: {fileID: 0}
     - target: {fileID: 4788952938297427345, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: m_Name
