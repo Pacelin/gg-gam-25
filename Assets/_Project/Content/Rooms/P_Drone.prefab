@@ -53,6 +53,7 @@ MonoBehaviour:
   _floorLayerMask:
     serializedVersion: 2
     m_Bits: 8
+  _stopDistance: 1.1
   _deathTween: {fileID: 0}
 --- !u!54 &5642102946893611645
 Rigidbody:

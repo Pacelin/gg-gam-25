@@ -10,6 +10,7 @@ namespace GGJam25.Game.Drones.Collectables
         [SerializeField] private GameObject[] _byLevel;
         [SerializeField] private Transform _firePoint;
         [SerializeField] private LayerMask _collectablesMask;
+        [SerializeField] private float _collectGrantDistance = 0.1f;
         [SerializeField] private UnityEvent _onCollectEvent;
 
         private GameObject _activeGO;
@@ -56,11 +57,14 @@ namespace GGJam25.Game.Drones.Collectables
 
         private bool CanMagnet(CollectableComponent collectable)
         {
+            var collectablePos = collectable.transform.position;
+            if (Vector3.Distance(collectablePos, _firePoint.position) <= _collectGrantDistance)
+                return true;
             var forward = _firePoint.forward;
             forward.y = 0;
-            var toCollectable = collectable.transform.position - _firePoint.position;
+            var toCollectable = collectablePos - _firePoint.position;
             toCollectable.y = 0;
-            var angle = Vector3.Angle(forward, toCollectable);
+            var angle = Vector3.Angle(forward.normalized, toCollectable.normalized);
             return angle <= GameContext.DroneUpgrades.VacuumAngle.CurrentValue;
         }
 
@@ -68,7 +72,7 @@ namespace GGJam25.Game.Drones.Collectables
         {
             var targetPosition = _firePoint.position;
             var newPosition = Vector3.MoveTowards(collectable.transform.position, targetPosition,
-                GameContext.DroneUpgrades.VacuumPower.CurrentValue);
+                GameContext.DroneUpgrades.VacuumPower.CurrentValue * Time.deltaTime);
             collectable.transform.position = newPosition;
             if (newPosition == targetPosition)
             {
