@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using GGJam25.Game.Balance;
 using TSS.Core;
 using VContainer.Unity;
 
@@ -13,6 +14,7 @@ namespace GGJam25.Game
         {
             _cts = CancellationTokenSource.CreateLinkedTokenSource(Runtime.CancellationToken);
             GameContext.CancellationToken = _cts.Token;
+            GameContext.DroneUpgrades = new DroneUpgrades();
         }
 
         public void Tick()

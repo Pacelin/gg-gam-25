@@ -23,6 +23,7 @@ namespace TSS.ContentManagement
         public async UniTask Initialize(CancellationToken cancellationToken)
         {
 			await Scenes.Initialize(cancellationToken);
+			await Upgrades.Initialize(cancellationToken);
         }
 
         public void Dispose() { }
@@ -35,6 +36,20 @@ namespace TSS.ContentManagement
 
 			public static async UniTask Initialize(CancellationToken cancellationToken)
 			{
+			}
+		}
+		[PublicAPI]
+		public static class Upgrades
+		{
+			public static DroneSpeedUpgrade Speed { get; private set; }
+			public static DroneStorageUpgrade Storage { get; private set; }
+
+			public static async UniTask Initialize(CancellationToken cancellationToken)
+			{
+				Speed = await Addressables.LoadAssetAsync<DroneSpeedUpgrade>("Drone Speed Upgrade")
+					.ToUniTask(cancellationToken: cancellationToken);
+				Storage = await Addressables.LoadAssetAsync<DroneStorageUpgrade>("Drone Storage Upgrade")
+					.ToUniTask(cancellationToken: cancellationToken);
 			}
 		}
     }

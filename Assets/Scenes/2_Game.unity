@@ -864,6 +864,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6404015341161173877, guid: 8a78c897c6f9a1a4dadebca531e215f1, type: 3}
+      propertyPath: m_EditorClassIdentifier
+      value: GGJam25.Game.DroneComponent, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

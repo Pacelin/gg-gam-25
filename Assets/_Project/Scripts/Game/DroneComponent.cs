@@ -36,11 +36,11 @@ namespace GGJam25.Game
                 return;
             
             var targetRotation = Quaternion.LookRotation(targetPosition - _rigidbody.position);
-            
-            //var speedLevel = _speedLevels[GameContext.DroneSpeedLevel.Value];
-            //var pos = Vector3.MoveTowards(_rigidbody.position, targetPosition, speedLevel.LinearSpeed * Time.fixedDeltaTime);
-            //var rot = Quaternion.RotateTowards(_rigidbody.rotation, targetRotation, speedLevel.AngularSpeed * Time.fixedDeltaTime);
-            //_rigidbody.Move(pos, rot);
+            var pos = Vector3.MoveTowards(_rigidbody.position, targetPosition, 
+                GameContext.DroneUpgrades.DroneLinearSpeed.CurrentValue * Time.fixedDeltaTime);
+            var rot = Quaternion.RotateTowards(_rigidbody.rotation, targetRotation, 
+                GameContext.DroneUpgrades.DroneAngularSpeed.CurrentValue * Time.fixedDeltaTime);
+            _rigidbody.Move(pos, rot);
         }
     }
 }

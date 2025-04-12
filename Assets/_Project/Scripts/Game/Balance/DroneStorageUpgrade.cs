@@ -1,4 +1,5 @@
 ﻿using R3;
+using TSS.ContentManagement;
 using TSS.Utils;
 using UnityEngine;
 
@@ -29,9 +30,12 @@ namespace GGJam25.Game.Balance
         public ReactiveProperty<int> SpeedLevel => _speedLevel;
         public ReactiveProperty<int> StorageLevel => _storageLevel;
 
-        public ReactiveProperty<int> DroneLinearSpeed => _speedLevel;
-        public ReactiveProperty<int> DroneAngularSpeed => _speedLevel;
-        public ReactiveProperty<int> DroneStorageCapacity => _storageLevel;
+        public ReadOnlyReactiveProperty<float> DroneLinearSpeed => 
+            _speedLevel.Select(l => CMS.Upgrades.Speed.LinearSpeeds[l]).ToReadOnlyReactiveProperty();
+        public ReadOnlyReactiveProperty<float> DroneAngularSpeed => 
+            _speedLevel.Select(l => CMS.Upgrades.Speed.AngularSpeeds[l]).ToReadOnlyReactiveProperty();
+        public ReadOnlyReactiveProperty<int> DroneStorageCapacity => 
+            _storageLevel.Select(l => CMS.Upgrades.Storage.Capacities[l]).ToReadOnlyReactiveProperty();
 
         private readonly ReactiveProperty<int> _speedLevel = new ReactiveProperty<int>(0);
         private readonly ReactiveProperty<int> _storageLevel = new ReactiveProperty<int>(0);
