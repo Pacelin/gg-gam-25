@@ -21,7 +21,7 @@ namespace GGJam25.Game.Drones
 
         public ReadOnlyReactiveProperty<float> VacuumPower =>
             _vacuumLevel.Select(l => CMS.Upgrades.Vacuum.Power[l]).ToReadOnlyReactiveProperty();
-        public ReadOnlyReactiveProperty<float> VacuumWidth =>
+        public ReadOnlyReactiveProperty<float> VacuumAngle =>
             _vacuumLevel.Select(l => CMS.Upgrades.Vacuum.Width[l]).ToReadOnlyReactiveProperty();
         public ReadOnlyReactiveProperty<float> VacuumDistance =>
             _vacuumLevel.Select(l => CMS.Upgrades.Vacuum.Distance[l]).ToReadOnlyReactiveProperty();

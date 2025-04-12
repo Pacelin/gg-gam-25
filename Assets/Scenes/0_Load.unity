@@ -377,7 +377,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 569cc65acd87442eb52eb3d0ce1376d7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: LudumDare57.UI.OverlayInputLock, Assembly-CSharp
+  m_EditorClassIdentifier: GGJam25.UI.OverlayInputLock, Assembly-CSharp
 --- !u!114 &1094675772
 MonoBehaviour:
   m_ObjectHideFlags: 0

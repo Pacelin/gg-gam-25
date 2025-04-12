@@ -17,4 +17,5 @@ MonoBehaviour:
   _icon: {fileID: 0}
   _prices: 
   _safeValueStr: "\u0421\u0442\u0430\u0431\u0438\u043B\u044C\u043D\u043E\u0441\u0442\u044C: "
-  _stabilization: []
+  _stabilization:
+  - -0.6
