@@ -1787,7 +1787,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 314cbb3062d2dd0428303fe737aeb36e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: LudumDare57.UI.PauseMenu, Assembly-CSharp
+  m_EditorClassIdentifier: GGJam25.UI.PauseMenu, Assembly-CSharp
   _menuButton: {fileID: 5181678447971203950}
   _resumeButton: {fileID: 7677229019266931033}
   _openTween: {fileID: 0}
