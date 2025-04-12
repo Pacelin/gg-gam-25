@@ -33,10 +33,6 @@ MonoBehaviour:
     CMSName: Upgrades/Vacuum
     ComponentName: GameObject
     Namespace: 
-  - GUID: 4c57c55135a172248a0b02995aa416e4
-    CMSName: Upgrades/Safe
-    ComponentName: GameObject
-    Namespace: 
   - GUID: 171936f4575090c45b6b40b3b60c8a35
     CMSName: Upgrades/Stabilization
     ComponentName: GameObject
