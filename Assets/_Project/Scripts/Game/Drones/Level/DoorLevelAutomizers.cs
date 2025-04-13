@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿#if UNITY_EDITOR
+using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
@@ -36,6 +37,10 @@ namespace GGJam25.Game.Drones
             {
                 if (door.Octagon == neigh.Octagon)
                     continue;
+                var doorDirection = -door.transform.forward;
+                var targetDirection = (neigh.transform.position - door.transform.position).normalized;
+                if (Vector3.Angle(doorDirection, targetDirection) > 5)
+                    continue;
                 var curDistance = Vector3.Distance(door.transform.position, neigh.transform.position);
                 if (curDistance < distance)
                 {
@@ -48,3 +53,4 @@ namespace GGJam25.Game.Drones
         }
     }
 }
+#endif
