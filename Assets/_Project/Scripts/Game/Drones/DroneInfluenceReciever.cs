@@ -9,7 +9,7 @@ namespace GGJam25.Game.Drones
         [SerializeField] private DroneComponent _drone;
 
         private readonly List<DroneInfluencer> _influencers = new();
-        
+
         private void OnValidate()
         {
             if (!_drone)
