@@ -5,7 +5,7 @@ namespace GGJam25.Game.Drones
 {
     public class DroneDetails : MonoBehaviour
     {
-        [SerializeField] private GameObject _speedComponent;
+        [SerializeField] private GameObject[] _speedlevels;
         [SerializeField] private GameObject _coldComponent;
         [SerializeField] private GameObject _hotComponent;
         [SerializeField] private GameObject _waterComponent;
@@ -17,7 +17,14 @@ namespace GGJam25.Game.Drones
         {
             _disposables = new CompositeDisposable();
             GameContext.DroneUpgrades.SpeedLevel.Subscribe(l =>
-                _speedComponent.SetActive(l > 0)).AddTo(_disposables);
+                {
+                    for (int i = 0; i < _speedlevels.Length; i++)
+                    {
+                        if (_speedlevels[i] == null)
+                            continue;
+                        _speedlevels[i].SetActive(l >= i);
+                    }
+                }).AddTo(_disposables);
             GameContext.DroneUpgrades.ColdUpgradeLevel.Subscribe(l =>
                 _coldComponent.SetActive(l > 0)).AddTo(_disposables);
             GameContext.DroneUpgrades.HotUpgradeLevel.Subscribe(l =>
