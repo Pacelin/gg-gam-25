@@ -699,6 +699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Location_0_D_L (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6629842324901148405, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 8536696060322155548}
     - target: {fileID: 7753038147758787424, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: _waterInfluence
       value: -2
@@ -721,6 +725,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
   m_PrefabInstance: {fileID: 236319954445845758}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6865312983384453643 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6629842324901148405, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 236319954445845758}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
 --- !u!4 &7263224070508811903 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7461255602084926081, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
@@ -734,6 +749,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8771229891035380353}
     m_Modifications:
+    - target: {fileID: 956316809966948036, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 5544074352252191043}
     - target: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.8
@@ -795,6 +814,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+--- !u!114 &1057449339165891289 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 956316809966948036, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 281850460504380445}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
 --- !u!4 &1336720855759317737 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
@@ -930,6 +960,10 @@ PrefabInstance:
       propertyPath: _temperatureInfluence
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8424147910643083858, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 6268229506385794553}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -943,6 +977,17 @@ Transform:
 --- !u!114 &6270378685235778148 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5855078800424849305, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 451968636355517949}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &8263299308815415215 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8424147910643083858, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
   m_PrefabInstance: {fileID: 451968636355517949}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -3419,6 +3464,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8771229891035380353}
     m_Modifications:
+    - target: {fileID: 1225568868400133040, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 5025716878246080723}
     - target: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3479,6 +3528,10 @@ PrefabInstance:
       propertyPath: _temperatureInfluence
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8697730545420575821, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 4107719317814225866}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3489,9 +3542,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
   m_PrefabInstance: {fileID: 1580664703708580554}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &355149162704550266 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1225568868400133040, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 1580664703708580554}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
 --- !u!114 &5327274967205248063 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6629842324901148405, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 1580664703708580554}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &7879942505089199751 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8697730545420575821, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
   m_PrefabInstance: {fileID: 1580664703708580554}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -5301,6 +5376,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8771229891035380353}
     m_Modifications:
+    - target: {fileID: 956316809966948036, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 5590862741151486848}
+    - target: {fileID: 1225568868400133040, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 5711118726697304956}
     - target: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.4
@@ -5349,6 +5432,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Location_0_D_L
       objectReference: {fileID: 0}
+    - target: {fileID: 5855078800424849305, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 6865312983384453643}
+    - target: {fileID: 6629842324901148405, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 7279332964230326935}
+    - target: {fileID: 7099900813552530262, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 355149162704550266}
     - target: {fileID: 7113770276814090487, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: _neighbour
       value: 
@@ -5361,6 +5456,14 @@ PrefabInstance:
       propertyPath: _temperatureInfluence
       value: -0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 8424147910643083858, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 1413840283937576418}
+    - target: {fileID: 8697730545420575821, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 7398944652872472057}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5369,6 +5472,28 @@ PrefabInstance:
       addedObject: {fileID: 813795273298051973}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+--- !u!114 &3061464653278498113 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 956316809966948036, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 2826295686528811909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &3907748539240853557 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1225568868400133040, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 2826295686528811909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
 --- !u!4 &3917197068388793713 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
@@ -5377,6 +5502,61 @@ Transform:
 --- !u!114 &5008060593798165362 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7113770276814090487, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 2826295686528811909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &5025716878246080723 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7099900813552530262, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 2826295686528811909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &6039768105884723671 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8424147910643083858, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 2826295686528811909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &6885316819865790408 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8697730545420575821, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 2826295686528811909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &8536696060322155548 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5855078800424849305, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 2826295686528811909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &8879104518240990576 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6629842324901148405, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
   m_PrefabInstance: {fileID: 2826295686528811909}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -6920,6 +7100,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Location_0_D_L (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7099900813552530262, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 3907748539240853557}
+    - target: {fileID: 7113770276814090487, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 4660271249320693596}
     - target: {fileID: 7753038147758787424, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: _waterInfluence
       value: -1
@@ -6938,6 +7126,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
   m_PrefabInstance: {fileID: 3298343659884376106}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5711118726697304956 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7099900813552530262, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 3298343659884376106}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &5728335137107443933 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7113770276814090487, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 3298343659884376106}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
 --- !u!1001 &3373874183485103204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7632,6 +7842,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8771229891035380353}
     m_Modifications:
+    - target: {fileID: 956316809966948036, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 7879942505089199751}
+    - target: {fileID: 1225568868400133040, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 678983390273464427}
     - target: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.4
@@ -7680,10 +7898,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Location_0_L
       objectReference: {fileID: 0}
+    - target: {fileID: 5855078800424849305, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 8879104518240990576}
+    - target: {fileID: 6629842324901148405, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 3337962749532824761}
     - target: {fileID: 7099900813552530262, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: _neighbour
       value: 
       objectReference: {fileID: 1935209933285140250}
+    - target: {fileID: 7113770276814090487, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 8263299308815415215}
     - target: {fileID: 7753038147758787424, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: _waterInfluence
       value: 0
@@ -7692,6 +7922,14 @@ PrefabInstance:
       propertyPath: _temperatureInfluence
       value: -0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 8424147910643083858, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 5728335137107443933}
+    - target: {fileID: 8697730545420575821, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 1057449339165891289}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7702,9 +7940,86 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
   m_PrefabInstance: {fileID: 3766146075350738190}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2685853480656524990 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1225568868400133040, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 3766146075350738190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &4107719317814225866 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 956316809966948036, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 3766146075350738190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &4660271249320693596 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8424147910643083858, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 3766146075350738190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &5544074352252191043 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8697730545420575821, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 3766146075350738190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
 --- !u!114 &6252091167090742872 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7099900813552530262, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 3766146075350738190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &6268229506385794553 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7113770276814090487, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 3766146075350738190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &7279332964230326935 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5855078800424849305, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 3766146075350738190}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &7513666163379147771 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6629842324901148405, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
   m_PrefabInstance: {fileID: 3766146075350738190}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -7996,6 +8311,10 @@ PrefabInstance:
       propertyPath: _temperatureInfluence
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8697730545420575821, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 3061464653278498113}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4477064555566007901, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
@@ -8014,6 +8333,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
   m_PrefabInstance: {fileID: 3828684015508305869}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5590862741151486848 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8697730545420575821, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 3828684015508305869}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
 --- !u!4 &5956436722055963980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7461255602084926081, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
@@ -13510,6 +13840,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8771229891035380353}
     m_Modifications:
+    - target: {fileID: 956316809966948036, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 6885316819865790408}
     - target: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.8
@@ -13558,6 +13892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Location_0_L (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7099900813552530262, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 2685853480656524990}
     - target: {fileID: 7753038147758787424, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: _waterInfluence
       value: 0
@@ -13571,6 +13909,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+--- !u!114 &678983390273464427 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7099900813552530262, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 7776539973899901757}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &7398944652872472057 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 956316809966948036, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 7776539973899901757}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
 --- !u!4 &8831128885546116553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
@@ -14558,6 +14918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Location_0_D_L (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7113770276814090487, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 6039768105884723671}
     - target: {fileID: 7753038147758787424, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: _waterInfluence
       value: -2
@@ -14579,6 +14943,17 @@ PrefabInstance:
       addedObject: {fileID: 4327749226543247601}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+--- !u!114 &1413840283937576418 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7113770276814090487, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 8153705960959960341}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
 --- !u!4 &1633817307252438932 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7461255602084926081, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
@@ -15703,6 +16078,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Location_0_U_L
       objectReference: {fileID: 0}
+    - target: {fileID: 5855078800424849305, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 7513666163379147771}
     - target: {fileID: 7753038147758787424, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
       propertyPath: _waterInfluence
       value: 0.02
@@ -15719,6 +16098,17 @@ PrefabInstance:
       addedObject: {fileID: 4561726916844298508}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+--- !u!114 &3337962749532824761 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5855078800424849305, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
+  m_PrefabInstance: {fileID: 9156865098703022880}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
 --- !u!4 &7959568374392591828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1253593927836450548, guid: 2e869aed95f493e409e3aaca5e0aa422, type: 3}
