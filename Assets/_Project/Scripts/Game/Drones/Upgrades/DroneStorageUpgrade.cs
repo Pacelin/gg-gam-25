@@ -14,7 +14,6 @@ namespace GGJam25.Game.Drones
 
         protected override void OnView(int currentLevel, DroneUpgradeView view, bool isMax)
         {
-            base.OnView(currentLevel, view);
             if (isMax)
                 view.AddInfo(_capacityValueStr, _capacityValueStr[currentLevel].ToString());
             else

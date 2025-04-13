@@ -44,6 +44,7 @@ namespace GGJam25.Game.Drones
             _disposable = _health.OnKill.Subscribe(_ =>
             {
                 GameContext.Level.Hub.Station.Death();
+                GameContext.DroneStorage.ClearDrone();
                 if (_deathTween)
                 {
                     _deathTween.Play();
