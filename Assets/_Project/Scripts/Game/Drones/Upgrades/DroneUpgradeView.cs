@@ -46,6 +46,7 @@ namespace GGJam25.Game.Drones
                 }).AddTo(_disposables);
             _buyButton.ObserveFeedbackStart().Subscribe(_ =>
             {
+                GameContext.DroneStorage.Buy(upgrade.GetPrice(level.Value));
                 level.Value++;
                 AudioSystem.Game_BuyUpgrade.PlayOneShot();
             }).AddTo(_disposables);

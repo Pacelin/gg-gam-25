@@ -19,6 +19,8 @@ namespace GGJam25.Game.Drones
         {
             _resourcesInDrone.Value = 0;
         }
+
+        public void Buy(int amount) => _resources.Value -= amount;
         
         public void AddResourceForDrone(int resourceAmount)
         {
