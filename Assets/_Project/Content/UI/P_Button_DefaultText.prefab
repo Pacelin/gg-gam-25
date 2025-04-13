@@ -76,11 +76,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventRef:
     Guid:
-      Data1: -73757971
-      Data2: 1092300725
-      Data3: 530329010
-      Data4: 2045083333
-    Path: event:/UI/Click
+      Data1: 896916501
+      Data2: 1233405146
+      Data3: -1268089204
+      Data4: 273580992
+    Path: event:/UI/Hover
 --- !u!1 &4478640272862256810
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,6 +424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5787833431455758846}
   - component: {fileID: 1036592792046877472}
+  - component: {fileID: 3359309498410921236}
   m_Layer: 5
   m_Name: Down
   m_TagString: Untagged
@@ -475,6 +476,25 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &3359309498410921236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7690527363253028094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544e5dfeefb4470ab1dccc05f3993dd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventRef:
+    Guid:
+      Data1: -73757971
+      Data2: 1092300725
+      Data3: 530329010
+      Data4: 2045083333
+    Path: event:/UI/Click
 --- !u!1 &8667645505059364730
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,7 +588,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e92e123e435f9734898d565567d04174, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: LudumDare57.UI.ScriptableButton, Assembly-CSharp
+  m_EditorClassIdentifier: GGJam25.UI.ScriptableButton, Assembly-CSharp
   _interactable: 1
   _toDefaultTween: {fileID: 4005150971962272568}
   _toHoverTween: {fileID: 5562901253331094376}
@@ -594,3 +614,18 @@ MonoBehaviour:
   _onDownEvent:
     m_PersistentCalls:
       m_Calls: []
+  _onClickEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3359309498410921236}
+        m_TargetAssemblyTypeName: TSS.Audio.SoundEventComponent, TSS.Audio.FMOD
+        m_MethodName: PlayOneShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
