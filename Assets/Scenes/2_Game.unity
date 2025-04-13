@@ -565,58 +565,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 382c8f910e802b646b1d8b8883f2821b, type: 3}
---- !u!1 &1597150041
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1597150043}
-  - component: {fileID: 1597150042}
-  m_Layer: 0
-  m_Name: TempOst
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1597150042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597150041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4754b9edc5442abb7f5d2963a633bea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: TSS.Audio.PlaySoundEvent, TSS.Audio.FMOD
-  _event:
-    _eventRef:
-      Guid:
-        Data1: 2023196770
-        Data2: 1173036713
-        Data3: -1753940094
-        Data4: 1507800373
-      Path: event:/MainMenu/Jungle
---- !u!4 &1597150043
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597150041}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.125568, y: 3.4641993, z: 28.513422}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1625371266
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,4 +672,3 @@ SceneRoots:
   - {fileID: 1771952975}
   - {fileID: 1296765231}
   - {fileID: 847075753}
-  - {fileID: 1597150043}
