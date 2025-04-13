@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.Collections.Generic;
+using System.Threading;
 using GGJam25.Game.Drones;
 using GGJam25.Game.Drones.HUD;
 
@@ -17,6 +18,6 @@ namespace GGJam25.Game
         public static OctagonController OctagonController { get; set; }
         public static OctagonPlayer OctagonPlayer { get; set; }
         
-        public static int CollectedKeys { get; set; }
+        public static List<int> CollectedKeys { get; set; }
     }
 }
