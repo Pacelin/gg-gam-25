@@ -164,6 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: GGJam25.Game.Drones.LevelComponent, Assembly-CSharp
   _hub: {fileID: 1181317314768669846}
+  _collectableKeys: []
 --- !u!1001 &46078049702515299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2027,6 +2028,17 @@ PrefabInstance:
       addedObject: {fileID: 5873551047091388138}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 531b9f78fa4733b4aa111e9d2af256ff, type: 3}
+--- !u!114 &684806438263281015 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 10607156523374416, guid: 531b9f78fa4733b4aa111e9d2af256ff, type: 3}
+  m_PrefabInstance: {fileID: 695037535888491047}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
 --- !u!114 &702053154575292118 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7728926857450737, guid: 531b9f78fa4733b4aa111e9d2af256ff, type: 3}
@@ -9944,6 +9956,17 @@ PrefabInstance:
 --- !u!114 &521019599613843106 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3737411971568707646, guid: 531b9f78fa4733b4aa111e9d2af256ff, type: 3}
+  m_PrefabInstance: {fileID: 3812012252192243356}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
+--- !u!114 &755353230373072846 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4511886855268880722, guid: 531b9f78fa4733b4aa111e9d2af256ff, type: 3}
   m_PrefabInstance: {fileID: 3812012252192243356}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -18538,6 +18561,10 @@ PrefabInstance:
       propertyPath: _temperatureInfluence
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1617929861507157493, guid: 531b9f78fa4733b4aa111e9d2af256ff, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 684806438263281015}
     - target: {fileID: 1884779114909451242, guid: 531b9f78fa4733b4aa111e9d2af256ff, type: 3}
       propertyPath: _neighbour
       value: 
@@ -18546,6 +18573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Location_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3737411971568707646, guid: 531b9f78fa4733b4aa111e9d2af256ff, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 755353230373072846}
     - target: {fileID: 6305206821756246762, guid: 531b9f78fa4733b4aa111e9d2af256ff, type: 3}
       propertyPath: m_text
       value: (+4, - 1)
