@@ -10,6 +10,7 @@ using UnityEngine.EventSystems;
 
 namespace GGJam25.Game.Drones
 {
+    
     public class DroneComponent : MonoBehaviour
     {
         public DroneHealth Health => _health;
@@ -52,6 +53,7 @@ namespace GGJam25.Game.Drones
                 GameContext.DroneStorage.ClearDrone();
                 if (_deathTween)
                 {
+                    AudioSystem.Game_Death.PlayOneShot();
                     _deathTween.Play();
                     _deathTween.WaitWhilePlay().ContinueWith(() => GameContext.Level.Hub.Station.Revive());
                 }

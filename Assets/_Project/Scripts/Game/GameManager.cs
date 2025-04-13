@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading;
 using GGJam25.Game.Drones;
 using TSS.ContentManagement;
@@ -18,7 +19,7 @@ namespace GGJam25.Game
             GameContext.CancellationToken = _cts.Token;
             GameContext.DroneUpgrades = new DroneUpgrades();
             GameContext.DroneStorage = new DroneStorage();
-            GameContext.CollectedKeys = 0;
+            GameContext.CollectedKeys = new List<int>();
             GameContext.OctagonPlayer = new OctagonPlayer();
 
             GameContext.OctagonController = Object.Instantiate(CMS.Prefabs.OctagonController);
