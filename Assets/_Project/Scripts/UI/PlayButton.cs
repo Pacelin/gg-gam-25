@@ -6,7 +6,7 @@ using TSS.Core;
 using TSS.SceneManagement;
 using UnityEngine;
 
-namespace LudumDare57.UI
+namespace GGJam25.UI
 {
     [RequireComponent(typeof(ScriptableButton))]
     public class PlayButton : MonoBehaviour

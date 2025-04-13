@@ -15,8 +15,53 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: 74d1f905e2729fb4cabb3f98768f8d67
   m_SerializeEntries:
+  - m_GUID: 171936f4575090c45b6b40b3b60c8a35
+    m_Address: Drone Stabilization Upgrade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 23428ca5dbf175647868b5eabdd40756
+    m_Address: Assets/_Project/Content/GUI/P_Octagon_Controller.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 29022a3c4eb55dd419fc76d032b9bfb3
+    m_Address: Drone Water Upgrade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 293edac5c913d4546aac169feac5275b
+    m_Address: Assets/_Project/Content/GUI/P_Shop.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3bb1aba31e284674aa5a2112a56166e8
+    m_Address: Assets/_Project/Content/Rooms/P_Level.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c7cca84f44015d44a17bae4ee5bf2c5
+    m_Address: Drone Sand Upgrade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 62af7fca09f34c74481788e651479d18
     m_Address: Runtime Settings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 696e6bc210a7452458cd3d80a2d5d017
+    m_Address: Drone Vacuum Upgrade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e0dec83e21487844b2c8b6d037a4179
+    m_Address: Drone Storage Upgrade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75184763ce2d202418292afb8883c294
+    m_Address: Assets/_Project/Content/GUI/P_HUD.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -30,8 +75,33 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 838c185834e975841ae1c0d8b93a06c0
+    m_Address: Drone Cold Upgrade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a78c897c6f9a1a4dadebca531e215f1
+    m_Address: Assets/_Project/Content/Rooms/P_Drone.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c19d509cb9962b141bc11c8295f87775
+    m_Address: Drone Hot Upgrade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e5f45ce303cab2046acd57fff6441457
     m_Address: Audio Volumes
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8880dfc11fadbc43bea2c7eb6317d78
+    m_Address: Drone Speed Upgrade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eeab6373a1046894282f0f211862c08d
+    m_Address: Drone Radar Upgrade
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e92e123e435f9734898d565567d04174, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: LudumDare57.UI.ScriptableButton, Assembly-CSharp
+  m_EditorClassIdentifier: GGJam25.UI.ScriptableButton, Assembly-CSharp
   _interactable: 1
   _toDefaultTween: {fileID: 6166405072980162321}
   _toHoverTween: {fileID: 8101944453409084058}
@@ -161,6 +161,39 @@ MonoBehaviour:
   _toDisabledTween: {fileID: 4213186923190500265}
   _feedbackTween: {fileID: 0}
   _lockInputOnFeedback: 0
+  _onEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8241340604924111668}
+        m_TargetAssemblyTypeName: TSS.Audio.SoundEventComponent, TSS.Audio.FMOD
+        m_MethodName: PlayOneShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onDownEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _onClickEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6036399397604788896}
+        m_TargetAssemblyTypeName: TSS.Audio.SoundEventComponent, TSS.Audio.FMOD
+        m_MethodName: PlayOneShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2627280374522636912
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,6 +204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7376369929368177723}
   - component: {fileID: 8101944453409084058}
+  - component: {fileID: 8241340604924111668}
   m_Layer: 5
   m_Name: Hover
   m_TagString: Untagged
@@ -222,6 +256,25 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &8241340604924111668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2627280374522636912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544e5dfeefb4470ab1dccc05f3993dd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventRef:
+    Guid:
+      Data1: 896916501
+      Data2: 1233405146
+      Data3: -1268089204
+      Data4: 273580992
+    Path: event:/UI/Hover
 --- !u!1 &6713101647368694164
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,6 +421,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7274730072291092403}
   - component: {fileID: 8034017599395955040}
+  - component: {fileID: 6036399397604788896}
   m_Layer: 5
   m_Name: Down
   m_TagString: Untagged
@@ -419,3 +473,22 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &6036399397604788896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8693788936688495874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544e5dfeefb4470ab1dccc05f3993dd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventRef:
+    Guid:
+      Data1: -73757971
+      Data2: 1092300725
+      Data3: 530329010
+      Data4: 2045083333
+    Path: event:/UI/Click

@@ -21,3 +21,59 @@ MonoBehaviour:
     CMSName: Scenes/Game
     ComponentName: GameObject
     Namespace: 
+  - GUID: e8880dfc11fadbc43bea2c7eb6317d78
+    CMSName: Upgrades/Speed
+    ComponentName: GameObject
+    Namespace: 
+  - GUID: 6e0dec83e21487844b2c8b6d037a4179
+    CMSName: Upgrades/Storage
+    ComponentName: GameObject
+    Namespace: 
+  - GUID: 696e6bc210a7452458cd3d80a2d5d017
+    CMSName: Upgrades/Vacuum
+    ComponentName: GameObject
+    Namespace: 
+  - GUID: 171936f4575090c45b6b40b3b60c8a35
+    CMSName: Upgrades/Stabilization
+    ComponentName: GameObject
+    Namespace: 
+  - GUID: eeab6373a1046894282f0f211862c08d
+    CMSName: Upgrades/Radar
+    ComponentName: GameObject
+    Namespace: 
+  - GUID: 75184763ce2d202418292afb8883c294
+    CMSName: Prefabs/HUD
+    ComponentName: HudComponent
+    Namespace: GGJam25.Game.Drones.HUD
+  - GUID: 8a78c897c6f9a1a4dadebca531e215f1
+    CMSName: Prefabs/Drone
+    ComponentName: DroneComponent
+    Namespace: GGJam25.Game.Drones
+  - GUID: 3bb1aba31e284674aa5a2112a56166e8
+    CMSName: Prefabs/Level
+    ComponentName: LevelComponent
+    Namespace: GGJam25.Game.Drones
+  - GUID: 23428ca5dbf175647868b5eabdd40756
+    CMSName: Prefabs/OctagonController
+    ComponentName: OctagonController
+    Namespace: GGJam25.Game.Drones
+  - GUID: 293edac5c913d4546aac169feac5275b
+    CMSName: Prefabs/Shop
+    ComponentName: DroneShop
+    Namespace: GGJam25.Game.Drones
+  - GUID: 838c185834e975841ae1c0d8b93a06c0
+    CMSName: Upgrades/Cold
+    ComponentName: DroneShop
+    Namespace: GGJam25.Game.Drones
+  - GUID: 5c7cca84f44015d44a17bae4ee5bf2c5
+    CMSName: Upgrades/Sand
+    ComponentName: DroneShop
+    Namespace: GGJam25.Game.Drones
+  - GUID: 29022a3c4eb55dd419fc76d032b9bfb3
+    CMSName: Upgrades/Water
+    ComponentName: DroneShop
+    Namespace: GGJam25.Game.Drones
+  - GUID: c19d509cb9962b141bc11c8295f87775
+    CMSName: Upgrades/Hot
+    ComponentName: DroneShop
+    Namespace: GGJam25.Game.Drones

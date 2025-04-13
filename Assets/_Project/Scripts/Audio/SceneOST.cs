@@ -1,7 +1,7 @@
 ﻿using TSS.Audio;
 using UnityEngine;
 
-namespace LudumDare57.Audio
+namespace GGJam25.Audio
 {
     public class SceneOST : MonoBehaviour
     {

@@ -95,9 +95,32 @@ namespace TSS.Tweening
             return tween;
         }
     }
+    [System.Serializable]
+    [ScriptableTweenPath("Transform/Scale Vector", 3)]
+    public class ScriptableTweenTranform_DOScaleVector : ScriptableTweenDurableItemBase<Transform>
+    {
+        [Box("Transform")]
+        [Order(10)]
+        [SerializeField] private bool _useStartValue;
+        [Box("Transform")]
+        [ShowIf(nameof(_useStartValue))]
+        [Order(11)]
+        [SerializeReference] private IVector3ValueProvider _startValue = new Vector3ValueProvider();
+        [Box("Transform")]
+        [Order(12)]
+        [SerializeReference] private IVector3ValueProvider _endValue = new Vector3ValueProvider();
+
+        protected override Tween CreateTween(Transform obj, float duration)
+        {
+            var tween = obj.DOScale(_endValue.Get(), duration);
+            if (_useStartValue)
+                tween.From(_startValue.Get());
+            return tween;
+        }
+    }
     
     [System.Serializable]
-    [ScriptableTweenPath("Transform/Jump", 3)]
+    [ScriptableTweenPath("Transform/Jump", 4)]
     public class ScriptableTweenTranform_DOJump : ScriptableTweenDurableItemBase<Transform>
     {
         [Box("Transform")]
@@ -122,7 +145,7 @@ namespace TSS.Tweening
     }
     
     [System.Serializable]
-    [ScriptableTweenPath("Transform/Shake Position", 4)]
+    [ScriptableTweenPath("Transform/Shake Position", 5)]
     public class ScriptableTweenTranform_DOShakePosition : ScriptableTweenDurableItemBase<Transform>
     {
         [Box("Transform")]
@@ -149,7 +172,7 @@ namespace TSS.Tweening
     }
     
     [System.Serializable]
-    [ScriptableTweenPath("Transform/Shake Rotation", 5)]
+    [ScriptableTweenPath("Transform/Shake Rotation", 6)]
     public class ScriptableTweenTranform_DOShakeRotation : ScriptableTweenDurableItemBase<Transform>
     {
         [Box("Transform")]
@@ -176,7 +199,7 @@ namespace TSS.Tweening
     }
     
     [System.Serializable]
-    [ScriptableTweenPath("Transform/Shake Scale", 6)]
+    [ScriptableTweenPath("Transform/Shake Scale", 7)]
     public class ScriptableTweenTranform_DOShakeScale : ScriptableTweenDurableItemBase<Transform>
     {
         [Box("Transform")]

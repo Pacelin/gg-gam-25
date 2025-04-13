@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{8be940da-dcb8-479a-b34c-6921520d1a94}">
+		<property name="assetPath">
+			<value>Lost in the Jungle no ambience.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>133.99995833333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{94120efc-b8b7-49f8-abe2-2978c864d41d}</destination>
+		</relationship>
+	</object>
+</objects>

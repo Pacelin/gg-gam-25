@@ -4,7 +4,7 @@ using TSS.Audio;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace LudumDare57.UI
+namespace GGJam25.UI
 {
     public class VolumesView : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using VContainer;
 using VContainer.Unity;
 
-namespace LudumDare57.Game
+namespace GGJam25.Game
 {
     public class GameScope : LifetimeScope
     {

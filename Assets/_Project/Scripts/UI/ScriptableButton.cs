@@ -3,10 +3,11 @@ using JetBrains.Annotations;
 using R3;
 using TSS.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace LudumDare57.UI
+namespace GGJam25.UI
 {
     [PublicAPI]
     [RequireComponent(typeof(Image))]
@@ -53,7 +54,11 @@ namespace LudumDare57.UI
         [SerializeField] private ScriptableTween _toDisabledTween;
         [SerializeField] private ScriptableTween _feedbackTween;
         [SerializeField] private bool _lockInputOnFeedback;
-
+        [Space] 
+        [SerializeField] private UnityEvent _onEnterEvent = new();
+        [SerializeField] private UnityEvent _onDownEvent = new();
+        [SerializeField] private UnityEvent _onClickEvent = new();
+        
         private bool _down;
         private bool _hover;
         private EState _activeState = EState.Unset;
@@ -109,6 +114,7 @@ namespace LudumDare57.UI
                 return;
             _hover = true;
             _onEnter.OnNext(Unit.Default);
+            _onEnterEvent.Invoke();
             UpdateState();
         }
 
@@ -130,6 +136,7 @@ namespace LudumDare57.UI
                 return;
             _down = true;
             _onDown.OnNext(Unit.Default);
+            _onDownEvent.Invoke();
             UpdateState();
         }
 
