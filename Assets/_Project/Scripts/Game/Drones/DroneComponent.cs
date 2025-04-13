@@ -2,6 +2,7 @@
 using Cysharp.Threading.Tasks;
 using GGJam25.Game.Indicators;
 using R3;
+using TSS.Audio;
 using TSS.Core;
 using TSS.Tweening;
 using UnityEngine;
@@ -25,6 +26,8 @@ namespace GGJam25.Game.Drones
         private bool _lastEngineState;
         private IDisposable _disposable;
         private DroneHealth _health = new DroneHealth();
+
+        private SoundEvent_Game_DroneChill.Instance _droneChill;
 
         public void Lock()
         {
@@ -57,11 +60,15 @@ namespace GGJam25.Game.Drones
                     GameContext.Level.Hub.Station.Revive();
                 }
             });
+            _droneChill = AudioSystem.Game_DroneChill.CreateInstance();
+            _droneChill.Start();
         }
 
         private void OnDisable()
         {
             _disposable?.Dispose();
+            _droneChill.Stop(true);
+            _droneChill.Release();
         }
 
         private void Update()

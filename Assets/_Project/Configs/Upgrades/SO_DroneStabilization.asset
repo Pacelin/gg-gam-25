@@ -23,5 +23,5 @@ MonoBehaviour:
   _stabilization:
   - 0
   - 0.01
+  - 0.015
   - 0.02
-  - 0.03
