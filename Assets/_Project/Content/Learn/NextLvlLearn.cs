@@ -1,5 +1,6 @@
 using GGJam25.Game;
 using GGJam25.Game.Drones;
+using GGJam25.Game.Indicators;
 using UnityEngine;
 
 public class NextLvlLearn : MonoBehaviour
@@ -11,8 +12,6 @@ public class NextLvlLearn : MonoBehaviour
     [SerializeField] private GameObject objectToDisable2;
     [SerializeField] private GameObject objectToEnable2;
     [SerializeField] private GameObject objectToEnable22;
-    [Header("Trigger Settings")]
-    [SerializeField] private GameObject requiredPrefab; 
     
 
     private void Update()
@@ -27,21 +26,14 @@ public class NextLvlLearn : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (IsRequiredPrefab(other.gameObject))
-        {
+        if (other.TryGetComponent<DroneTriggerPoint>(out _))
             SwitchObjects();
-        }
     }
 
-    bool IsRequiredPrefab(GameObject obj)
-    {
-        if (requiredPrefab == null) return false;
-        return obj.name.StartsWith(requiredPrefab.name);
-    }
 
     void SwitchObjects()
     {
-        // Отключаем или уничтожаем объект
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         if (objectToDisable != null)
         {
             if (destroyInsteadOfDisable)
@@ -50,7 +42,7 @@ public class NextLvlLearn : MonoBehaviour
                 objectToDisable.SetActive(false);
         }
 
-        // Включаем новый объект
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         if (objectToEnable != null)
         {
             objectToEnable.SetActive(true);
