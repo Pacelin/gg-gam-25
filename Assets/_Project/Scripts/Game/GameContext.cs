@@ -14,6 +14,7 @@ namespace GGJam25.Game
 
         public static LevelComponent Level { get; set; }
         public static HudComponent HUD { get; set; }
+        public static DroneShop Shop { get; set; }
         public static OctagonController OctagonController { get; set; }
         public static OctagonPlayer OctagonPlayer { get; set; }
         

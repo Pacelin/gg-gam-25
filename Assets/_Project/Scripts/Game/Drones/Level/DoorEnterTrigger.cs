@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using GGJam25.Game.Indicators;
+using UnityEngine;
 
 namespace GGJam25.Game.Drones
 {
@@ -9,7 +10,7 @@ namespace GGJam25.Game.Drones
         
         private void OnTriggerEnter(Collider other)
         {
-            if (other.TryGetComponent<DroneComponent>(out _))
+            if (other.TryGetComponent<DroneTriggerPoint>(out _))
                 GameContext.OctagonController.EnterDoor(_door);
         }
     }

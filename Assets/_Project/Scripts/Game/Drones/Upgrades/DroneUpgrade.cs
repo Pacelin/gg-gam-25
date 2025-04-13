@@ -10,10 +10,13 @@ namespace GGJam25.Game.Drones
         [SerializeField] private Sprite _icon;
         [SerializeField] private int[] _prices;
 
+        public int GetPrice(int currentLevel) => _prices[currentLevel];
+        public bool IsMax(int currentLevel) => currentLevel >= _prices.Length;
+        
         public void OnView(int currentLevel, DroneUpgradeView view)
         {
             view.SetIcon(_icon);
-            view.SetName(_name);
+            view.SetName(_name, currentLevel);
             view.SetDescription(_description);
             var isMax = currentLevel >= _prices.Length;
             view.SetMax(isMax);

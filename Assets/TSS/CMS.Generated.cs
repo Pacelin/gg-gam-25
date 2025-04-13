@@ -70,6 +70,7 @@ namespace TSS.ContentManagement
 			public static DroneComponent Drone { get; private set; }
 			public static LevelComponent Level { get; private set; }
 			public static OctagonController OctagonController { get; private set; }
+			public static DroneShop Shop { get; private set; }
 
 			public static async UniTask Initialize(CancellationToken cancellationToken)
 			{
@@ -81,6 +82,8 @@ namespace TSS.ContentManagement
 					.ToUniTask(cancellationToken: cancellationToken)).GetComponent<LevelComponent>();
 				OctagonController = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/GUI/P_Octagon_Controller.prefab")
 					.ToUniTask(cancellationToken: cancellationToken)).GetComponent<OctagonController>();
+				Shop = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/GUI/P_Shop.prefab")
+					.ToUniTask(cancellationToken: cancellationToken)).GetComponent<DroneShop>();
 			}
 		}
     }
