@@ -443,6 +443,7 @@ GameObject:
   - component: {fileID: 3655691880804116698}
   - component: {fileID: 6171094435572509377}
   - component: {fileID: 1506266448912097828}
+  - component: {fileID: 3568375537479376600}
   m_Layer: 5
   m_Name: P_Radar
   m_TagString: Untagged
@@ -518,6 +519,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 0.01
+--- !u!114 &3568375537479376600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3453191861167166255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 939b49b2a97146ba8851dcf615fc2a89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Indicators.DroneRadar, Assembly-CSharp
+  _enabledState: {fileID: 5446325953740659851}
+  _disabledState: {fileID: 827166659574572424}
+  _arrowHub: {fileID: 1392139403906734980}
+  _arrowKey: {fileID: 5121551627437736882}
 --- !u!1 &4178758157018607181
 GameObject:
   m_ObjectHideFlags: 0

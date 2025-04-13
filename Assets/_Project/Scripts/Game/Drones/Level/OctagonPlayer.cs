@@ -5,9 +5,12 @@ namespace GGJam25.Game.Drones
     public class OctagonPlayer
     {
         private SoundEventInstance _instance;
+        private string _lastId;
 
         public void Switch(SoundEvent evt)
         {
+            if (_lastId == evt.GUIO)
+                return;
             if (_instance != null)
             {
                 _instance.Stop(true);
@@ -16,6 +19,7 @@ namespace GGJam25.Game.Drones
 
             _instance = evt.CreateInstance();
             _instance.Start();
+            _lastId = evt.GUIO;
         }
     }
 }

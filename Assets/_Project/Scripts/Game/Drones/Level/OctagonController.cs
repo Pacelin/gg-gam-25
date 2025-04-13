@@ -7,13 +7,17 @@ namespace GGJam25.Game.Drones
 {
     public class OctagonController : MonoBehaviour
     {
+        public Transform ActiveOctagon => _activeOctagon ? _activeOctagon : GameContext.Level.Hub.transform;
+        
         [SerializeField] private CanvasGroup _fadeCanvas;
         [SerializeField] private Vector3 _cameraOffset;
         [SerializeField] private float _moveCameraDuration;
         [SerializeField] private float _fadeDelay;
         [SerializeField] private float _fadeDuration;
         [SerializeField] private float _fadeInterval;
-        
+
+        private Transform _activeOctagon;
+
         private void OnDisable()
         {
             DOTween.Kill(this);
@@ -22,6 +26,7 @@ namespace GGJam25.Game.Drones
         public void EnterDoor(DoorComponent door)
         {
             DOTween.Kill(this);
+            _activeOctagon = door.Neighbour.Octagon;
             var newCamPosition = door.Neighbour.Octagon.position + _cameraOffset;
             var newDronePosition = door.Neighbour.Entry.position;
             DOTween.Sequence(this)
@@ -44,6 +49,7 @@ namespace GGJam25.Game.Drones
         {
             DOTween.Kill(this);
             var newCamPosition = point.position + _cameraOffset;
+            _activeOctagon = GameContext.Level.Hub.transform;
             DOTween.Sequence(this)
                 .AppendCallback(() =>
                 {
