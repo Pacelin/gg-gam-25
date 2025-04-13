@@ -61,3 +61,19 @@ MonoBehaviour:
     CMSName: Prefabs/Shop
     ComponentName: DroneShop
     Namespace: GGJam25.Game.Drones
+  - GUID: 838c185834e975841ae1c0d8b93a06c0
+    CMSName: Upgrades/Cold
+    ComponentName: DroneShop
+    Namespace: GGJam25.Game.Drones
+  - GUID: 5c7cca84f44015d44a17bae4ee5bf2c5
+    CMSName: Upgrades/Sand
+    ComponentName: DroneShop
+    Namespace: GGJam25.Game.Drones
+  - GUID: 29022a3c4eb55dd419fc76d032b9bfb3
+    CMSName: Upgrades/Water
+    ComponentName: DroneShop
+    Namespace: GGJam25.Game.Drones
+  - GUID: c19d509cb9962b141bc11c8295f87775
+    CMSName: Upgrades/Hot
+    ComponentName: DroneShop
+    Namespace: GGJam25.Game.Drones

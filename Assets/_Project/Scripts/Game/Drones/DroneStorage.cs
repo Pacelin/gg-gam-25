@@ -1,5 +1,4 @@
-﻿using System;
-using R3;
+﻿using R3;
 using UnityEngine;
 
 namespace GGJam25.Game.Drones
@@ -11,7 +10,7 @@ namespace GGJam25.Game.Drones
         public Observable<int> OnCollectDrone => _onCollectDrone;
 
         private readonly Subject<int> _onCollectDrone = new();
-        private readonly ReactiveProperty<int> _resources = new(0);
+        private readonly ReactiveProperty<int> _resources = new(1000);
         private readonly ReactiveProperty<int> _resourcesInDrone = new(0);
 
         public void ClearDrone()

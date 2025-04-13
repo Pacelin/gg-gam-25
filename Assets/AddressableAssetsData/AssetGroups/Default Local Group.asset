@@ -25,6 +25,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 29022a3c4eb55dd419fc76d032b9bfb3
+    m_Address: Drone Water Upgrade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 293edac5c913d4546aac169feac5275b
     m_Address: Assets/_Project/Content/GUI/P_Shop.prefab
     m_ReadOnly: 0
@@ -32,6 +37,11 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3bb1aba31e284674aa5a2112a56166e8
     m_Address: Assets/_Project/Content/Rooms/P_Level.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c7cca84f44015d44a17bae4ee5bf2c5
+    m_Address: Drone Sand Upgrade
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -65,8 +75,18 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 838c185834e975841ae1c0d8b93a06c0
+    m_Address: Drone Cold Upgrade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8a78c897c6f9a1a4dadebca531e215f1
     m_Address: Assets/_Project/Content/Rooms/P_Drone.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c19d509cb9962b141bc11c8295f87775
+    m_Address: Drone Hot Upgrade
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

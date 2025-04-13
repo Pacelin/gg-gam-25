@@ -5,7 +5,6 @@ using GGJam25.Game.Drones.HUD;
 namespace GGJam25.Game
 {
     [System.Serializable]
-    
     public static class GameContext
     {
         public static CancellationToken CancellationToken { get; set; }

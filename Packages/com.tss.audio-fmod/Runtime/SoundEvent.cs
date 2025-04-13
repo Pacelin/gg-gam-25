@@ -35,7 +35,9 @@ namespace TSS.Audio
                 _eventDescription.getLength(out var length);
                 return length;
             }
-        } 
+        }
+
+        public string GUIO => _eventRef.Guid.ToString();
 
         [SerializeField] private EventReference _eventRef;
 

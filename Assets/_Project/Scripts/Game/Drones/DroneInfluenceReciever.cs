@@ -30,6 +30,15 @@ namespace GGJam25.Game.Drones
                 Debug.Log("W" + water);*/
             }
 
+            if (water > 0)
+                water = Mathf.Max(0, water - GameContext.DroneUpgrades.WaterProtection.CurrentValue);
+            else if (water < 0)
+                water = Mathf.Min(0, water + GameContext.DroneUpgrades.SandProtection.CurrentValue);
+            if (temp > 0)
+                temp = Mathf.Max(0, temp - GameContext.DroneUpgrades.HotProtection.CurrentValue);
+            else if (temp < 0)
+                temp = Mathf.Min(0, temp + GameContext.DroneUpgrades.ColdProtection.CurrentValue);
+            
             water *= Time.deltaTime;
             temp *= Time.deltaTime;
             water += Mathf.MoveTowards(_drone.Health.Water.CurrentValue, 0,
