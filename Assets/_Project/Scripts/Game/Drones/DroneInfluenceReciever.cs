@@ -26,6 +26,8 @@ namespace GGJam25.Game.Drones
             {
                 water += influencer.WaterInfluence;
                 temp += influencer.TemperatureInfluence;
+                /*Debug.Log("T" + temp);
+                Debug.Log("W" + water);*/
             }
 
             water *= Time.deltaTime;

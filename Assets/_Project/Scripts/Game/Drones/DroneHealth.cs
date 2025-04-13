@@ -14,12 +14,14 @@ namespace GGJam25.Game.Indicators
         private ReactiveProperty<float> _water = new(0);
         private ReactiveProperty<float> _temperature = new(0);
         private bool _killed = false;
-        
+     
+
         public void ApplyWaterInfluence(float influence)
         {
             if (_killed)
                 return;
             _water.Value = Mathf.Clamp(_water.Value + influence, -1, 1);
+            Debug.Log(_water.Value);
             if (_water.Value >= 1 || _water.Value <= -1)
             {
                 _killed = true;
@@ -32,6 +34,7 @@ namespace GGJam25.Game.Indicators
             if (_killed)
                 return;
             _temperature.Value = Mathf.Clamp(_temperature.Value + influence, -1, 1);
+            Debug.Log(_temperature.Value);
             if (_temperature.Value >= 1 || _temperature.Value <= -1)
             {
                 _killed = true;
