@@ -2,7 +2,6 @@
 using R3;
 using TSS.Audio;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace GGJam25.UI
 {
@@ -23,7 +22,7 @@ namespace GGJam25.UI
             {
                 _master.OnValueChanged.Subscribe(v => AudioSystem.Volumes.MasterVolume = v),
                 _music.OnValueChanged.Subscribe(v => AudioSystem.Volumes.SetVolume(0, v)),
-                _sfx.OnValueChanged.Subscribe(v => AudioSystem.Volumes.SetVolume(0, v))
+                _sfx.OnValueChanged.Subscribe(v => AudioSystem.Volumes.SetVolume(1, v))
             };
         }
 
