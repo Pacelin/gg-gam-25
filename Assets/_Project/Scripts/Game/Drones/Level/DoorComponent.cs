@@ -4,17 +4,6 @@ using UnityEngine;
 
 namespace GGJam25.Game.Drones
 {
-    public class Chest : MonoBehaviour
-    {
-        [SerializeField] private GameObject[] _keys;
-
-        private void Update()
-        {
-            for (int i = 0; i < _keys.Length; i++)
-                _keys[i].gameObject.SetActive(GameContext.CollectedKeys.Contains(i));
-        }
-    }
-    
     public class DoorComponent : MonoBehaviour
     {
         public Transform Octagon => _octagon;

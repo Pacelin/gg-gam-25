@@ -36,6 +36,7 @@ namespace GGJam25.Game
 
         public void Dispose()
         {
+            GameContext.OctagonPlayer.Stop();
             _cts.Cancel();
             _cts.Dispose();
             _cts = null;

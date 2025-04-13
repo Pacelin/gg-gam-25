@@ -1,4 +1,5 @@
 ﻿using TSS.Audio;
+using Unity.VisualScripting;
 
 namespace GGJam25.Game.Drones
 {
@@ -7,6 +8,15 @@ namespace GGJam25.Game.Drones
         private SoundEventInstance _instance;
         private string _lastId;
 
+        public void Stop()
+        {
+            if (_instance != null)
+            {
+                _instance.Stop(true);
+                _instance.Release();
+            }
+        }
+        
         public void Switch(SoundEvent evt)
         {
             if (_lastId == evt.GUIO)
