@@ -29,8 +29,11 @@ namespace GGJam25.Game.Drones
             _spawnTween.Play();
             _spawnTween.WaitWhilePlay().ContinueWith(() =>
             {
-                _activeDrone.Value.transform.SetParent(null);
-                _activeDrone.Value.Unlock();
+                if (_activeDrone.Value)
+                {
+                    _activeDrone.Value.transform.SetParent(null);
+                    _activeDrone.Value.Unlock();
+                }
             });
             GameContext.HUD.ShowDroneCanvas();
         }
