@@ -12,7 +12,8 @@ namespace GGJam25.Game.Drones
     public class DroneComponent : MonoBehaviour
     {
         public DroneHealth Health => _health;
-        
+
+        [SerializeField] private DroneDetails _details;
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private Collider _collider;
         [SerializeField] private LayerMask _floorLayerMask;
@@ -21,6 +22,7 @@ namespace GGJam25.Game.Drones
 
         private bool _locked;
         private bool _activeInput;
+        private bool _lastEngineState;
         private IDisposable _disposable;
         private DroneHealth _health = new DroneHealth();
 
@@ -76,9 +78,30 @@ namespace GGJam25.Game.Drones
             _rigidbody.linearVelocity = Vector3.zero;
             _rigidbody.angularVelocity = Vector3.zero;
             if (Runtime.IsPaused)
+            {
+                if (_lastEngineState)
+                {
+                    _details.GetEngine().Disable();
+                    _lastEngineState = false;
+                }
                 return;
+            }
+
             if (!_activeInput)
+            {
+                if (_lastEngineState)
+                {
+                    _details.GetEngine().Disable();
+                    _lastEngineState = false;
+                }
                 return;
+            }
+            
+            if (!_lastEngineState)
+            {
+                _details.GetEngine().Enable();
+                _lastEngineState = true;
+            }
 
             Vector3 targetPosition;
             var ray = SceneCameraProvider.MainCamera.ScreenPointToRay(Input.mousePosition);

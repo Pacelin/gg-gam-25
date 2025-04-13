@@ -5,6 +5,25 @@ namespace GGJam25.Game.Drones
 {
     public class DroneDetails : MonoBehaviour
     {
+        [System.Serializable]
+        public struct Engines
+        {
+            [SerializeField] private ParticleSystem[] _systems;
+
+            public void Enable()
+            {
+                foreach(var sys in _systems)
+                    sys.Play();
+            }
+
+            public void Disable()
+            {
+                foreach(var sys in _systems)
+                    sys.Stop();
+            }
+        }
+
+        [SerializeField] private Engines[] _engines;
         [SerializeField] private GameObject[] _speedlevels;
         [SerializeField] private GameObject _coldComponent;
         [SerializeField] private GameObject _hotComponent;
@@ -12,6 +31,8 @@ namespace GGJam25.Game.Drones
         [SerializeField] private GameObject _sandComponent;
 
         private CompositeDisposable _disposables;
+
+        public Engines GetEngine() => _engines[GameContext.DroneUpgrades.SpeedLevel.Value];
         
         private void OnEnable()
         {
@@ -22,7 +43,7 @@ namespace GGJam25.Game.Drones
                     {
                         if (_speedlevels[i] == null)
                             continue;
-                        _speedlevels[i].SetActive(l >= i);
+                        _speedlevels[i].SetActive(l == i);
                     }
                 }).AddTo(_disposables);
             GameContext.DroneUpgrades.ColdUpgradeLevel.Subscribe(l =>

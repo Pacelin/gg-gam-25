@@ -390,6 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c97af090432e46f995114263c9e8be37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: GGJam25.Game.Drones.DroneComponent, Assembly-CSharp
+  _details: {fileID: 3509925578790905113}
   _rigidbody: {fileID: 5642102946893611645}
   _collider: {fileID: 7984715372205107982}
   _floorLayerMask:
@@ -650,6 +651,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc5436f20a7f49aabe2fa1291aaab9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: GGJam25.Game.Drones.DroneDetails, Assembly-CSharp
+  _engines:
+  - _systems:
+    - {fileID: 3537715105872712683}
+    - {fileID: 3297061630644513509}
+  - _systems:
+    - {fileID: 1790837183705059625}
+    - {fileID: 4897338481968708035}
+  - _systems:
+    - {fileID: 8310320011335742179}
+    - {fileID: 810384678240729003}
+  - _systems:
+    - {fileID: 2596591644742428259}
+    - {fileID: 5417141358850515456}
   _speedlevels:
   - {fileID: 6872667792102317225}
   - {fileID: 5629748159296289313}
@@ -2112,6 +2126,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 6231710621678950170}
     m_Modifications:
     - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
       propertyPath: VelocityModule.enabled
       value: 1
       objectReference: {fileID: 0}
@@ -2212,6 +2230,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+--- !u!198 &5417141358850515456 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+  m_PrefabInstance: {fileID: 1437042672757330527}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5417141358850515710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6403252182692130977, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
@@ -2225,6 +2248,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6306413109727862}
     m_Modifications:
+    - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
       propertyPath: VelocityModule.enabled
       value: 1
@@ -2331,6 +2358,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6403252182692130977, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
   m_PrefabInstance: {fileID: 1957443550878861724}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &4897338481968708035 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+  m_PrefabInstance: {fileID: 1957443550878861724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2823063473744716354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2410,6 +2442,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4893930193654832353}
     m_Modifications:
+    - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
       propertyPath: VelocityModule.enabled
       value: 1
@@ -2516,6 +2552,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6403252182692130977, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
   m_PrefabInstance: {fileID: 3136998938966966972}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &8310320011335742179 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+  m_PrefabInstance: {fileID: 3136998938966966972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4613584879401492854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2524,6 +2565,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2328965623568918203}
     m_Modifications:
+    - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
       propertyPath: VelocityModule.enabled
       value: 1
@@ -2625,6 +2670,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+--- !u!198 &1790837183705059625 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+  m_PrefabInstance: {fileID: 4613584879401492854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1790837183705059799 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6403252182692130977, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
@@ -2638,6 +2688,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2112858902295714736}
     m_Modifications:
+    - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
       propertyPath: VelocityModule.enabled
       value: 1
@@ -2744,6 +2798,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6403252182692130977, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
   m_PrefabInstance: {fileID: 6044951639443294196}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &810384678240729003 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+  m_PrefabInstance: {fileID: 6044951639443294196}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7621382263854883764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2752,6 +2811,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2413566646280749258}
     m_Modifications:
+    - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
       propertyPath: VelocityModule.enabled
       value: 1
@@ -2858,6 +2921,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6403252182692130977, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
   m_PrefabInstance: {fileID: 7621382263854883764}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &3537715105872712683 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+  m_PrefabInstance: {fileID: 7621382263854883764}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8439024398672403130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2866,6 +2934,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3039414445858334185}
     m_Modifications:
+    - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
       propertyPath: VelocityModule.enabled
       value: 1
@@ -2972,6 +3044,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6403252182692130977, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
   m_PrefabInstance: {fileID: 8439024398672403130}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &3297061630644513509 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+  m_PrefabInstance: {fileID: 8439024398672403130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8994842637572068924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2980,6 +3057,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1090022369578258618}
     m_Modifications:
+    - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
       propertyPath: VelocityModule.enabled
       value: 1
@@ -3081,6 +3162,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+--- !u!198 &2596591644742428259 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6403252182692130911, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
+  m_PrefabInstance: {fileID: 8994842637572068924}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2596591644742428317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6403252182692130977, guid: 4e12b3c53c0f8ee4da83655d8d2770d5, type: 3}
