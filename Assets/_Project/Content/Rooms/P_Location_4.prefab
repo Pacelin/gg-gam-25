@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5281469226984029646
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2841020345714804712}
+    m_Modifications:
+    - target: {fileID: 2988206533114817035, guid: fd465888177e57142aea6b00b245116a, type: 3}
+      propertyPath: m_Name
+      value: HotCloud
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915054311723203850, guid: fd465888177e57142aea6b00b245116a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915054311723203850, guid: fd465888177e57142aea6b00b245116a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915054311723203850, guid: fd465888177e57142aea6b00b245116a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915054311723203850, guid: fd465888177e57142aea6b00b245116a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915054311723203850, guid: fd465888177e57142aea6b00b245116a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915054311723203850, guid: fd465888177e57142aea6b00b245116a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915054311723203850, guid: fd465888177e57142aea6b00b245116a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915054311723203850, guid: fd465888177e57142aea6b00b245116a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915054311723203850, guid: fd465888177e57142aea6b00b245116a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915054311723203850, guid: fd465888177e57142aea6b00b245116a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fd465888177e57142aea6b00b245116a, type: 3}
+--- !u!4 &3671329721328156868 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8915054311723203850, guid: fd465888177e57142aea6b00b245116a, type: 3}
+  m_PrefabInstance: {fileID: 5281469226984029646}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8557317596894031029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -142,6 +204,42 @@ PrefabInstance:
       objectReference: {fileID: 8387896220433149520, guid: 7d7c29a430d84ba4dad063b283fbe025, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5885333864077618013, guid: c4d0f3de0f00e21458186092062f824c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3671329721328156868}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1462920622264052332, guid: c4d0f3de0f00e21458186092062f824c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3676442733595301135}
   m_SourcePrefab: {fileID: 100100000, guid: c4d0f3de0f00e21458186092062f824c, type: 3}
+--- !u!4 &2841020345714804712 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5885333864077618013, guid: c4d0f3de0f00e21458186092062f824c, type: 3}
+  m_PrefabInstance: {fileID: 8557317596894031029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7101303093621753561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1462920622264052332, guid: c4d0f3de0f00e21458186092062f824c, type: 3}
+  m_PrefabInstance: {fileID: 8557317596894031029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3676442733595301135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7101303093621753561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38961d564f3b4885a48c0f5893ba3372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.OctagonSound, Assembly-CSharp
+  _octagonEvent:
+    _eventRef:
+      Guid:
+        Data1: 2023196770
+        Data2: 1173036713
+        Data3: -1753940094
+        Data4: 1507800373
+      Path: event:/Game/Jungle_Biom

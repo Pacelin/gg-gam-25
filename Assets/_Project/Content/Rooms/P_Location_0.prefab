@@ -95,5 +95,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1462920622264052332, guid: c4d0f3de0f00e21458186092062f824c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6386600801300376073}
   m_SourcePrefab: {fileID: 100100000, guid: c4d0f3de0f00e21458186092062f824c, type: 3}
+--- !u!1 &6090019468397723589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1462920622264052332, guid: c4d0f3de0f00e21458186092062f824c, type: 3}
+  m_PrefabInstance: {fileID: 4668349344421467561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6386600801300376073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6090019468397723589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38961d564f3b4885a48c0f5893ba3372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.OctagonSound, Assembly-CSharp
+  _octagonEvent:
+    _eventRef:
+      Guid:
+        Data1: 1509577823
+        Data2: 1227662135
+        Data3: 100315294
+        Data4: -1596912409
+      Path: event:/Game/Hub_Biom
