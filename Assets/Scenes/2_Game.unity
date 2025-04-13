@@ -254,7 +254,7 @@ Camera:
   far clip plane: 100
   field of view: 97.3
   orthographic: 1
-  orthographic size: 4.5
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -459,9 +459,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3816606246180584148, guid: 382c8f910e802b646b1d8b8883f2821b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7534901900077873551, guid: 382c8f910e802b646b1d8b8883f2821b, type: 3}
       propertyPath: m_Name
       value: P_PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534901900077873551, guid: 382c8f910e802b646b1d8b8883f2821b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788892443881694727, guid: 382c8f910e802b646b1d8b8883f2821b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856746626044652723, guid: 382c8f910e802b646b1d8b8883f2821b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
