@@ -241,7 +241,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9e1f04c2518051a4d8364778327b314a, type: 2}
     - target: {fileID: 4750268734823734152, guid: 27081136428ac5e45a3a1891d03b2a20, type: 3}
       propertyPath: m_text
-      value: NIL
+      value: ZERO
       objectReference: {fileID: 0}
     - target: {fileID: 4750268734823734152, guid: 27081136428ac5e45a3a1891d03b2a20, type: 3}
       propertyPath: m_fontStyle
