@@ -10,7 +10,7 @@ namespace GGJam25.Game.Drones
         public ReadOnlyReactiveProperty<int> ResourcesInDrone => _resourcesInDrone;
         public Observable<int> OnCollectDrone => _onCollectDrone;
 
-        private readonly Subject<int> _onCollectDrone;
+        private readonly Subject<int> _onCollectDrone = new();
         private readonly ReactiveProperty<int> _resources = new(0);
         private readonly ReactiveProperty<int> _resourcesInDrone = new(0);
 
