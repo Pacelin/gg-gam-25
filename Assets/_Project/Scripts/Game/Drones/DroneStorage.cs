@@ -14,6 +14,11 @@ namespace GGJam25.Game.Drones
         private readonly ReactiveProperty<int> _resources = new(0);
         private readonly ReactiveProperty<int> _resourcesInDrone = new(0);
 
+        public void ClearDrone()
+        {
+            _resourcesInDrone.Value = 0;
+        }
+        
         public void AddResourceForDrone(int resourceAmount)
         {
             _resourcesInDrone.Value = Mathf.Min(

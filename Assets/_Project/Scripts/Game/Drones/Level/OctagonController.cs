@@ -28,6 +28,7 @@ namespace GGJam25.Game.Drones
                 .AppendCallback(() =>
                 {
                     GameContext.Level.Hub.Station.ActiveDrone.CurrentValue.Lock();
+                    GameContext.HUD.SetShopButtonActive(door.Neighbour.Octagon == GameContext.Level.Hub.transform);
                 })
                 .Append(SceneCameraProvider.MainCamera.transform.DOMove(newCamPosition, _moveCameraDuration))
                 .Join(GameContext.Level.Hub.Station.ActiveDrone.CurrentValue.transform.DOMove(newDronePosition, _moveCameraDuration))

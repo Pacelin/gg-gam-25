@@ -51,14 +51,6 @@ namespace GGJam25.Game.Drones
             }).AddTo(_disposables);
         }
         
-        private void OnEnable()
-        {
-            _buyButton.ObserveFeedbackStart().Subscribe(_ =>
-            {
-                AudioSystem.Game_BuyUpgrade.PlayOneShot();
-            }).AddTo(_disposables);
-        }
-
         private void OnDisable()
         {
             _disposables?.Dispose();
