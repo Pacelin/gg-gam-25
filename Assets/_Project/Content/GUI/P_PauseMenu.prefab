@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7976018323360995722}
   - component: {fileID: 789019743448350407}
   - component: {fileID: 6508571954060900784}
+  - component: {fileID: 5461284341483119738}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -122,6 +123,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &5461284341483119738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2413152977668905108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710ecfee115449428e84c834d7d72235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.UI.VolumesView, Assembly-CSharp
+  _master: {fileID: 3097720376556204738}
+  _music: {fileID: 2984131549726321325}
+  _sfx: {fileID: 4119164187267575696}
 --- !u!1 &3009569282552968017
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +654,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2256440263774138992, guid: 719357b42658d5440bce149551f5bd03, type: 3}
   m_PrefabInstance: {fileID: 74828707619609097}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2984131549726321325 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2909355618681893028, guid: 719357b42658d5440bce149551f5bd03, type: 3}
+  m_PrefabInstance: {fileID: 74828707619609097}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c713507a0be74d999fab99807940d820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.UI.ScriptableSlider, Assembly-CSharp
 --- !u!1001 &4312639554486302972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -739,6 +766,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38e12bf548c0e3844924c3f14af38819, type: 3}
+--- !u!114 &3097720376556204738 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1235326149243652670, guid: 38e12bf548c0e3844924c3f14af38819, type: 3}
+  m_PrefabInstance: {fileID: 4312639554486302972}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c713507a0be74d999fab99807940d820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.UI.ScriptableSlider, Assembly-CSharp
 --- !u!224 &8242152153238700776 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5313002250635311636, guid: 38e12bf548c0e3844924c3f14af38819, type: 3}
@@ -975,6 +1013,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8303253036676133091, guid: 4815ab4c4afc24c4f91de1934b2ad002, type: 3}
   m_PrefabInstance: {fileID: 6886948060250929747}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4119164187267575696 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7402067054385845699, guid: 4815ab4c4afc24c4f91de1934b2ad002, type: 3}
+  m_PrefabInstance: {fileID: 6886948060250929747}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c713507a0be74d999fab99807940d820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.UI.ScriptableSlider, Assembly-CSharp
 --- !u!1001 &8013464410734764950
 PrefabInstance:
   m_ObjectHideFlags: 0

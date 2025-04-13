@@ -16,8 +16,8 @@ MonoBehaviour:
   _description: "\u0412\u0442\u044F\u0433\u0438\u0432\u0430\u044E\u0449\u0435\u0435
     \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E \u0434\u043B\u044F
     \u0437\u0430\u0445\u0432\u0430\u0442\u0430 \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432."
-  _icon: {fileID: 0}
-  _prices: 640000002c010000f4010000
+  _icon: {fileID: 305327223, guid: ae3f7c3494013a2468747e56f119bc89, type: 3}
+  _prices: 640000002c010000
   _powerValueStr: "\u041C\u043E\u0449\u043D\u043E\u0441\u0442\u044C: "
   _widthValueStr: "\u0428\u0438\u0440\u0438\u043D\u0430: "
   _distanceValueStr: "\u0414\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u044C: "
@@ -27,12 +27,12 @@ MonoBehaviour:
   - 1.5
   - 2
   _width:
-  - 15
-  - 25
-  - 35
+  - 20
+  - 30
+  - 45
   - 60
   _distance:
-  - 0.3
-  - 0.4
+  - 0.5
   - 0.6
-  - 0.8
+  - 0.9
+  - 1.2
