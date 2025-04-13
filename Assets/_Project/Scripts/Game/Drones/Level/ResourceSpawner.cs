@@ -7,6 +7,7 @@ namespace GGJam25.Game.Drones
 {
     public class ResourceSpawner : MonoBehaviour
     {
+        [SerializeField] private Color _color;
         [SerializeField] private Vector2 _cooldownRange;
         [SerializeField] private CollectableResource _resourcePrefab;
 
@@ -27,7 +28,7 @@ namespace GGJam25.Game.Drones
 
         private void OnDrawGizmos()
         {
-            Gizmos.color = Color.green;
+            Gizmos.color = _color;
             Gizmos.DrawSphere(transform.position, 0.2f);
         }
     }

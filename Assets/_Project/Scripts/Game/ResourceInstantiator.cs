@@ -11,7 +11,7 @@ namespace GGJam25.Game.Editor
     {
         [SerializeField] private int _count;
         [SerializeField] private float _radius;
-        [SerializeField] private ResourceSpawner _spawnerPrefab;
+        [SerializeField] private ResourceSpawner[] _spawnerPrefabs;
 
         #if UNITY_EDITOR
         [ContextMenu("Generate")]
@@ -21,7 +21,7 @@ namespace GGJam25.Game.Editor
                 DestroyImmediate(transform.GetChild(0).gameObject);
             for (int i = 0; i < _count; i++)
             {
-                var prefab = PrefabUtility.InstantiatePrefab(_spawnerPrefab) as ResourceSpawner;
+                var prefab = PrefabUtility.InstantiatePrefab(_spawnerPrefabs[i]) as ResourceSpawner;
                 var r = Random.insideUnitCircle * _radius;
                 prefab.transform.SetParent(transform);
                 prefab.transform.localPosition = new Vector3(r.x, 0, r.y);

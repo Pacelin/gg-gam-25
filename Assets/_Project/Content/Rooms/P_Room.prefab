@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cba359582954daeae9f73df427a8c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: GGJam25.Game.Editor.ResourceInstantiator, Assembly-CSharp
-  _count: 6
-  _radius: 3
+  _count: 25
+  _radius: 2.5
   _spawnerPrefab: {fileID: 8387896220433149520, guid: 37b2070711bf0224fb9c7343a3769147, type: 3}
 --- !u!1 &2338572422529341696
 GameObject:
