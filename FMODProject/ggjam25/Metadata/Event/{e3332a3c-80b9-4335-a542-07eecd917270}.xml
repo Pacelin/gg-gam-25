@@ -5,7 +5,7 @@
 			<value>Pustinya</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{fd500669-735d-4901-bdaa-dfcb6043757c}</destination>
@@ -38,6 +38,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{d6488baf-04b7-4d43-adee-691d39deaeae}">
+		<relationship name="modules">
+			<destination>{73321c67-825d-44ca-90cd-eb9ad4ee4fc0}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{28c765e4-a2ff-4520-ba42-403fdc19c967}</destination>
 		</relationship>
@@ -56,6 +59,9 @@
 	<object class="EventAutomatableProperties" id="{b9c675fb-7a5e-41c6-88f3-8c3e64424512}" />
 	<object class="MarkerTrack" id="{e1f862f7-392f-42ca-9bff-73ddbda87236}" />
 	<object class="Timeline" id="{23318cee-8445-4ce1-8c06-7949f9efb66e}">
+		<relationship name="modules">
+			<destination>{73321c67-825d-44ca-90cd-eb9ad4ee4fc0}</destination>
+		</relationship>
 		<relationship name="markers">
 			<destination>{187ec2ed-4d6d-4dc8-9d32-8f9140cf1b3a}</destination>
 		</relationship>
@@ -71,6 +77,14 @@
 			<destination>{64a4c9d9-3298-4f1a-ac8a-78436106f4e8}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{73321c67-825d-44ca-90cd-eb9ad4ee4fc0}">
+		<property name="length">
+			<value>78.545464852607708</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{5ed2a4cb-1811-4e6e-8e5a-5f0edd89d7fa}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{d932e000-af41-4255-9155-cff4d4cf8469}">
 		<relationship name="effects">
 			<destination>{96ef000b-f2bb-4989-81e3-69fbd8bba433}</destination>
@@ -82,7 +96,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>145.99995833333332</value>
+			<value>78.545464852607708</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{23318cee-8445-4ce1-8c06-7949f9efb66e}</destination>
