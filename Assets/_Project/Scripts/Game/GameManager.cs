@@ -24,6 +24,7 @@ namespace GGJam25.Game
             GameContext.OctagonController = Object.Instantiate(CMS.Prefabs.OctagonController);
             GameContext.Level = Object.Instantiate(CMS.Prefabs.Level);
             GameContext.HUD = Object.Instantiate(CMS.Prefabs.HUD);
+            GameContext.Shop = Object.Instantiate(CMS.Prefabs.Shop);
             
             GameContext.Level.Hub.Station.Spawn();
         }
