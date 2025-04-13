@@ -1,5 +1,4 @@
-﻿using System;
-using GGJam25.Game.Drones;
+﻿using GGJam25.Game.Drones;
 using UnityEngine;
 using Random = UnityEngine.Random;
 #if UNITY_EDITOR
