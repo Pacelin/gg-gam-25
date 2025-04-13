@@ -19,6 +19,7 @@ namespace GGJam25.Game
             GameContext.DroneUpgrades = new DroneUpgrades();
             GameContext.DroneStorage = new DroneStorage();
             GameContext.CollectedKeys = 0;
+            GameContext.OctagonPlayer = new OctagonPlayer();
 
             GameContext.OctagonController = Object.Instantiate(CMS.Prefabs.OctagonController);
             GameContext.Level = Object.Instantiate(CMS.Prefabs.Level);

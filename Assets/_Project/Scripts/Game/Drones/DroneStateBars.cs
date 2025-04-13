@@ -8,7 +8,7 @@ namespace GGJam25.Game.Indicators
         [SerializeField] private DroneBar _waterBar;
         [SerializeField] private DroneBar _tempBar;
 
-        private void OnEnable()
+        private void Update()
         {
             _waterBar.Initialize(
                 GameContext.Level.Hub.Station.ActiveDrone

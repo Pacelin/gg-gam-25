@@ -20,7 +20,7 @@ namespace GGJam25.Game.Indicators
                 var fromRotation = _rotation0 - _rotationAmplitude;
                 var toRotation = _rotation0 + _rotationAmplitude;
                 var t = (f + 1) / 2f;
-                _origin.rotation = Quaternion.Euler(0, 0, t);
+                _origin.rotation = Quaternion.Euler(0, 0, Mathf.Lerp(fromRotation, toRotation, t));
             });
         }
 
