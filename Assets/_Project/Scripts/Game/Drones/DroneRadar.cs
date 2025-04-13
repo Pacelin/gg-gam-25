@@ -35,7 +35,7 @@ namespace GGJam25.Game.Indicators
                     vector = first - second;
                 }
             }
-            _arrowKey.gameObject.SetActive(nearbyKey);
+            _arrowKey.gameObject.SetActive(nearbyKey && distance > 0);
             if (nearbyKey)
             {
                 vector.y = vector.z;
