@@ -41,18 +41,10 @@ namespace GGJam25.Game.Drones
             _drone.Health.ApplyTemperatureInfluence(temp);
         }
 
-        private void OnTriggerEnter(Collider other)
-        {
-            var influencer = other.GetComponent<DroneInfluencer>();
-            if (influencer)
-                _influencers.Add(influencer);
-        }
-
-        private void OnTriggerExit(Collider other)
-        {
-            var influencer = other.GetComponent<DroneInfluencer>();
-            if (influencer)
-                _influencers.Remove(influencer);
-        }
+        public void Register(DroneInfluencer influencer) =>
+            _influencers.Add(influencer);
+        
+        public void Unregister(DroneInfluencer influencer) =>
+            _influencers.Remove(influencer);
     }
 }

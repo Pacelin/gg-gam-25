@@ -5,6 +5,7 @@ using R3;
 using TSS.Core;
 using TSS.Tweening;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace GGJam25.Game.Drones
 {
@@ -64,7 +65,7 @@ namespace GGJam25.Game.Drones
         {
             if (Runtime.IsPaused)
                 return;
-            _activeInput = Input.GetKey(KeyCode.Mouse0);
+            _activeInput = Input.GetKey(KeyCode.Mouse0) && !EventSystem.current.IsPointerOverGameObject();
         }
 
         private void FixedUpdate()
