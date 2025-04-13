@@ -204,6 +204,7 @@ MonoBehaviour:
   - {fileID: 3554035309236738104}
   - {fileID: 3554035309236738104}
   _items:
+  - rid: 4922611714662859195
   - rid: 4922611708248457327
   - rid: 4922611708248457347
   _cacheTween: 0
@@ -291,6 +292,18 @@ MonoBehaviour:
       type: {class: Vector3ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
         _value: {x: 1, y: 1, z: 1}
+    - rid: 4922611714662859195
+      type: {class: ScriptableTweenFMOD_DOSound, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+        _sound:
+          _eventRef:
+            Guid:
+              Data1: 1804026631
+              Data2: 1157304860
+              Data3: -58913141
+              Data4: -886315384
+            Path: event:/Game/Sliding_Door
 --- !u!1 &5207171911112129996
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,6 +441,7 @@ MonoBehaviour:
   - {fileID: 3554035309236738104}
   - {fileID: 3554035309236738104}
   _items:
+  - rid: 4922611714662859193
   - rid: 4922611708248457327
   - rid: 4922611708248457334
   _cacheTween: 0
@@ -515,6 +529,18 @@ MonoBehaviour:
       type: {class: Vector3ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
         _value: {x: 0, y: 1, z: 1}
+    - rid: 4922611714662859193
+      type: {class: ScriptableTweenFMOD_DOSound, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+        _sound:
+          _eventRef:
+            Guid:
+              Data1: 1804026631
+              Data2: 1157304860
+              Data3: -58913141
+              Data4: -886315384
+            Path: event:/Game/Sliding_Door
 --- !u!1 &8186766195179316159
 GameObject:
   m_ObjectHideFlags: 0
