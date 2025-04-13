@@ -1,5 +1,7 @@
-﻿using GGJam25.Game.Drones.Collectables;
+﻿using System;
+using GGJam25.Game.Drones.Collectables;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace GGJam25.Game.Drones
 {
@@ -21,6 +23,12 @@ namespace GGJam25.Game.Drones
                 _instance = Instantiate(_resourcePrefab, transform.position, Random.rotation);
                 _cooldown = Random.Range(_cooldownRange.x, _cooldownRange.y);
             }
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawSphere(transform.position, 0.2f);
         }
     }
 }
