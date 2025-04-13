@@ -5,7 +5,7 @@
 			<value>Buy_Upgrade</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{86cbd5b7-ea75-4111-b778-dc39bfa13fc6}</destination>
@@ -38,6 +38,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{bcee2266-dfac-4c3e-9a4d-7dbb0d959488}">
+		<relationship name="modules">
+			<destination>{9cd6d3cb-02f7-4423-ab63-7ef91db5ee56}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{d29657ae-39a9-4ef8-b385-6fa741f2fad4}</destination>
 		</relationship>
@@ -50,15 +53,15 @@
 			<destination>{5a478840-bdc3-4d6f-addd-1469d8dca3e5}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{5aba3178-97be-4319-ac9c-ee589848e55f}</destination>
+			<destination>{e37d5cf2-e612-4b4f-b68a-4714c6579d6e}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{31404c59-ddd5-4df8-9383-c630a2da706f}" />
 	<object class="MarkerTrack" id="{2b431ac3-637a-43ce-9a79-8b6bc11ad254}" />
 	<object class="Timeline" id="{0e05c83e-81ef-4d5f-a923-6bcf4566cae7}">
-		<property name="isProxyEnabled">
-			<value>false</value>
-		</property>
+		<relationship name="modules">
+			<destination>{9cd6d3cb-02f7-4423-ab63-7ef91db5ee56}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{d29657ae-39a9-4ef8-b385-6fa741f2fad4}">
 		<relationship name="effectChain">
@@ -69,6 +72,14 @@
 		</relationship>
 		<relationship name="mixer">
 			<destination>{86fe1ff3-58cd-4add-8e0b-9084f0f84008}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{9cd6d3cb-02f7-4423-ab63-7ef91db5ee56}">
+		<property name="length">
+			<value>0.62643990929705218</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{d62ba214-1e93-4b73-b78a-6b0b744a53f6}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{c2b92b23-651d-415f-9a7f-df6d592a7fdd}">
