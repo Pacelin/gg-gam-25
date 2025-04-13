@@ -22,10 +22,10 @@ MonoBehaviour:
   _widthValueStr: "\u0428\u0438\u0440\u0438\u043D\u0430: "
   _distanceValueStr: "\u0414\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u044C: "
   _power:
-  - 1
-  - 1.2
-  - 1.5
-  - 2
+  - 2.5
+  - 3
+  - 3.5
+  - 5
   _width:
   - 20
   - 30
@@ -33,6 +33,6 @@ MonoBehaviour:
   - 60
   _distance:
   - 0.5
-  - 0.6
-  - 0.9
-  - 1.2
+  - 0.75
+  - 1
+  - 1.5

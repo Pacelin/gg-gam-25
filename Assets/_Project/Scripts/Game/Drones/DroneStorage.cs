@@ -1,10 +1,12 @@
-﻿using R3;
+﻿using System;
+using R3;
 using UnityEngine;
 
 namespace GGJam25.Game.Drones
 {
     public class DroneStorage
     {
+        public bool HasSpace => _resourcesInDrone.Value < GameContext.DroneUpgrades.StorageCapacity.CurrentValue;
         public ReadOnlyReactiveProperty<int> Resources => _resources;
         public ReadOnlyReactiveProperty<int> ResourcesInDrone => _resourcesInDrone;
         public Observable<int> OnCollectDrone => _onCollectDrone;

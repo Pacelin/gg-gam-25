@@ -74,7 +74,7 @@ namespace GGJam25.Game.Drones.Collectables
             var newPosition = Vector3.MoveTowards(collectable.transform.position, targetPosition,
                 GameContext.DroneUpgrades.VacuumPower.CurrentValue * Time.deltaTime);
             collectable.transform.position = newPosition;
-            if (newPosition == targetPosition)
+            if (newPosition == targetPosition && GameContext.DroneStorage.HasSpace)
             {
                 collectable.Collect();
                 _onCollectEvent?.Invoke();

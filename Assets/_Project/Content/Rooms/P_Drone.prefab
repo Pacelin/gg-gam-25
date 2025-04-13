@@ -185,7 +185,7 @@ MonoBehaviour:
   _collectablesMask:
     serializedVersion: 2
     m_Bits: 1
-  _collectGrantDistance: 0.1
+  _collectGrantDistance: 0.4
   _onCollectEvent:
     m_PersistentCalls:
       m_Calls: []
