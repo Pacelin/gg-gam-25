@@ -90,7 +90,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ff98184c0f4aabe47a81c9ebec09a7c2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5885333864077618013, guid: c4d0f3de0f00e21458186092062f824c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6773865109568906573}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1462920622264052332, guid: c4d0f3de0f00e21458186092062f824c, type: 3}
       insertIndex: -1
@@ -121,3 +124,74 @@ MonoBehaviour:
         Data3: -334783058
         Data4: 318193930
       Path: event:/Game/Ice_Biom
+--- !u!4 &5648439561249827651 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5885333864077618013, guid: c4d0f3de0f00e21458186092062f824c, type: 3}
+  m_PrefabInstance: {fileID: 2292242244178231326}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4317368348443037214
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5648439561249827651}
+    m_Modifications:
+    - target: {fileID: 2770024857723181921, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+      propertyPath: m_Name
+      value: ColdGaizer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2770024857723181921, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344181106065943379, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344181106065943379, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344181106065943379, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344181106065943379, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344181106065943379, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344181106065943379, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344181106065943379, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344181106065943379, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344181106065943379, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344181106065943379, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+--- !u!4 &6773865109568906573 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7344181106065943379, guid: 48e9e5c7c55e3ac42960607d6a5e0628, type: 3}
+  m_PrefabInstance: {fileID: 4317368348443037214}
+  m_PrefabAsset: {fileID: 0}
