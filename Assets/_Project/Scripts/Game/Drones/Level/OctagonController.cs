@@ -28,20 +28,12 @@ namespace GGJam25.Game.Drones
                 .AppendCallback(() =>
                 {
                     GameContext.Level.Hub.Station.ActiveDrone.CurrentValue.Lock();
-                    _fadeCanvas.gameObject.SetActive(true);
                 })
                 .Append(SceneCameraProvider.MainCamera.transform.DOMove(newCamPosition, _moveCameraDuration))
-                .Join(_fadeCanvas.DOFade(1, _fadeDuration).SetDelay(_fadeDelay))
-                .AppendCallback(() =>
-                {
-                    GameContext.Level.Hub.Station.ActiveDrone.CurrentValue.SetPosition(newDronePosition);
-                })
-                .AppendInterval(_fadeInterval)
-                .Append(_fadeCanvas.DOFade(0, _fadeDuration))
+                .Join(GameContext.Level.Hub.Station.ActiveDrone.CurrentValue.transform.DOMove(newDronePosition, _moveCameraDuration))
                 .AppendCallback(() =>
                 {
                     GameContext.Level.Hub.Station.ActiveDrone.CurrentValue.Unlock();
-                    _fadeCanvas.gameObject.SetActive(false);
                     if (door.Neighbour.Octagon == GameContext.Level.Hub.transform)
                         GameContext.DroneStorage.CollectDrone();
                 }).Play();

@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: GGJam25.Game.Drones.DroneComponent, Assembly-CSharp
   _rigidbody: {fileID: 5642102946893611645}
+  _collider: {fileID: 7984715372205107982}
   _floorLayerMask:
     serializedVersion: 2
     m_Bits: 8

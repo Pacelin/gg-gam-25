@@ -13,6 +13,7 @@ namespace GGJam25.Game.Drones
         public DroneHealth Health => _health;
         
         [SerializeField] private Rigidbody _rigidbody;
+        [SerializeField] private Collider _collider;
         [SerializeField] private LayerMask _floorLayerMask;
         [SerializeField] private float _stopDistance = 1;
         [SerializeField] private ScriptableTween _deathTween;
@@ -25,20 +26,17 @@ namespace GGJam25.Game.Drones
         public void Lock()
         {
             _locked = true;
+            _collider.enabled = false;
             _rigidbody.isKinematic = true;
         }
 
         public void Unlock()
         {
             _locked = false;
+            _collider.enabled = true;
             _rigidbody.isKinematic = false;
         }
 
-        public void SetPosition(Vector3 position)
-        {
-            _rigidbody.position = position;
-        }
-        
         private void OnEnable()
         {
             _health = new DroneHealth();
@@ -71,13 +69,13 @@ namespace GGJam25.Game.Drones
 
         private void FixedUpdate()
         {
+            if (_locked)
+                return;
             _rigidbody.linearVelocity = Vector3.zero;
             _rigidbody.angularVelocity = Vector3.zero;
             if (Runtime.IsPaused)
                 return;
             if (!_activeInput)
-                return;
-            if (_locked)
                 return;
 
             Vector3 targetPosition;
