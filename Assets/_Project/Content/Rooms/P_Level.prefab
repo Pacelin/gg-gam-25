@@ -4541,6 +4541,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5648439561249827651, guid: a398df565105d9f4e9c8bf5e31eca4c4, type: 3}
   m_PrefabInstance: {fileID: 1329533200876343112}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6662947904109341007 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5621891703184844295, guid: a398df565105d9f4e9c8bf5e31eca4c4, type: 3}
+  m_PrefabInstance: {fileID: 1329533200876343112}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
 --- !u!1001 &1332796050339856820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6743,6 +6754,17 @@ PrefabInstance:
       addedObject: {fileID: 7157122724347204963}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a398df565105d9f4e9c8bf5e31eca4c4, type: 3}
+--- !u!114 &1753532381631812973 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4431835602845312737, guid: a398df565105d9f4e9c8bf5e31eca4c4, type: 3}
+  m_PrefabInstance: {fileID: 2726022026036327308}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1ae8907ea448d6bf914a3130fe5902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GGJam25.Game.Drones.DoorComponent, Assembly-CSharp
 --- !u!114 &1759524427625486028 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4449504428075279680, guid: a398df565105d9f4e9c8bf5e31eca4c4, type: 3}
@@ -6934,10 +6956,18 @@ PrefabInstance:
       propertyPath: _temperatureInfluence
       value: -3
       objectReference: {fileID: 0}
+    - target: {fileID: 4431835602845312737, guid: a398df565105d9f4e9c8bf5e31eca4c4, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 6662947904109341007}
     - target: {fileID: 4449504428075279680, guid: a398df565105d9f4e9c8bf5e31eca4c4, type: 3}
       propertyPath: _neighbour
       value: 
       objectReference: {fileID: 7772178996469781057}
+    - target: {fileID: 5621891703184844295, guid: a398df565105d9f4e9c8bf5e31eca4c4, type: 3}
+      propertyPath: _neighbour
+      value: 
+      objectReference: {fileID: 1753532381631812973}
     - target: {fileID: 5648439561249827651, guid: a398df565105d9f4e9c8bf5e31eca4c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.2
